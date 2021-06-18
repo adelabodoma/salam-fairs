@@ -1,0 +1,70 @@
+.heading-1 {
+    font-size: rem(42);
+    color: $color-dark;
+    font-family: $font-bold;
+    margin-bottom: 30px;
+}
+
+.heading-2 {
+    font-size: rem(26);
+    color: $color-dark;
+    font-family: $font-bold;
+    margin-bottom: 30px;
+}
+
+.heading-3 {
+    font-size: rem(14);
+    color: $color-dark; 
+    line-height: 24px; 
+}
+
+.heading-2-grey {
+    font-size: rem(18);
+    color: $color-grey; 
+    font-family: $font-bold;
+}
+
+.heading-3-bold {
+    font-size: rem(18);
+    color: $color-dark; 
+    font-family: $font-bold;
+    margin-bottom: 20px;
+}
+
+.heading-3-grey {
+    font-size: rem(14);
+    color: $color-grey; 
+}
+
+.heading-5 {
+    font-size: rem(16);
+    color: $primary-color;
+}
+
+.heading-6 {
+    font-size: rem(14);
+    color: $primary-color;
+}
+
+.heading-bold-1 {
+    font-size: rem(16);
+    font-family: $font-bold;
+    color: $color-dark;
+}
+
+.heading-bold-2 {
+    font-size: rem(14);
+    font-family: $font-bold;
+    color: $color-dark;
+}
+
+@include media-breakpoint-down(sm){
+    .heading-1 {
+        font-size: rem(25);
+        margin-bottom: 10px;
+    }
+
+    .heading-5 {
+        font-size: rem(12);
+    }
+  }

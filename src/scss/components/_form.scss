@@ -1,0 +1,64 @@
+.form-select {
+  background-color: $color-light-grey-2;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url(../img/icon/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgba($primary-color, 25%);
+  }
+}
+
+.form-input {
+  background-color: $color-light-grey-2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgba($primary-color, 25%);
+  }
+}
+
+.form-input-search {
+  position: relative;
+  width: 100%;
+  margin-#{$right}: 30px;
+
+  &::before {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    margin-#{$left}: 5.2px;
+    -moz-osx-font-smoothing: grayscale;
+    content: $icon-search;
+    width: 42px;
+    height: 42px;
+    background-color: $primary-color;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    #{$right}: 0;
+    top: 0;
+    z-index: 99;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+}

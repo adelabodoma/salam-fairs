@@ -1,0 +1,173 @@
+.utl-separator {
+  height: 13px;
+  border: 1px solid $color-grey;
+  margin: 0 20.3px;
+}
+
+.utl-down-arrow {
+  &::after {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    font-size: 7px;
+    margin-#{$left}: 5.2px;
+    -moz-osx-font-smoothing: grayscale;
+    content: $icon-down-arrow;
+  }
+}
+
+.utl-btn-primary {
+  background-color: $primary-color;
+  color: $color-white;
+}
+
+.utl-btn-secondary {
+  background-color: $color-light;
+  color: $color-grey;
+}
+
+.utl-share-button {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    font-size: rem(18);
+  }
+
+  &:hover {
+    color: $color-dark;
+  }
+}
+
+.utl-btn-outline-primary {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+}
+
+.utl-link {
+  font-family: $font-bold;
+  font-size: rem(14);
+  color: $primary-color;
+  transition: $transition-type;
+
+  &:hover {
+    color: $color-dark;
+  }
+}
+
+.utl-form-label {
+  font-size: rem(14);
+  font-family: $font-bold;
+}
+
+.utl-form-label-dark {
+  font-size: rem(14);
+  font-family: $font-bold;
+  color: $color-dark;
+  margin-bottom: 10px;
+}
+
+.utl-no-border {
+  border: unset;
+}
+
+.utl-group-buttons {
+  margin-top: 50px;
+
+  & > *:not(:last-child) {
+    margin-#{$right}: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin-#{$right}: 0;
+    }
+
+    & > * {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.utl-hover-primary {
+  transition: $transition-type;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.utl-card-hover {
+  transition: $transition-type;
+  padding-top: 5px;
+  &:hover {
+    cursor: pointer;
+    // padding-top: 5px;
+    transform: translateY(-5px);
+  }
+}
+
+.utl-d-sm-none {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.utl-sort-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  input {
+    margin-#{$right}: 30px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      
+      @at-root .heading-2 {
+        margin-bottom: 15px!important;
+      }
+
+      .form-input-search {
+        margin-#{$right}: 0!important;
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+}
+
+.utl-padding-scroll {
+  padding-bottom: 85px;
+}
+
+.utl-no-hover {
+  &:hover {
+    transform: unset;
+  }
+}

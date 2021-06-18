@@ -1,0 +1,64 @@
+@import "./variables";
+
+// COLORS
+// $theme-colors: (
+//   "primary": #BF9F35,
+//   "secondary": #1C1B19,
+// );
+
+// BORDER RADIUS
+// $border-radius: 30px;
+// $btn-padding-y-lg: 100px;
+// $btn-padding-y: 20px;
+
+// CONTAINER
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  //   xxl: 1650px
+);
+
+// BREAKPOINTS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  //   xxl: 1500px
+);
+
+// BUTTONS
+$btn-padding-y: 10px;
+$btn-padding-x: 30px;
+$btn-border-radius: 23px;
+$btn-font-size: 14px;
+$btn-font-weight: bold;
+
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 99px;
+$btn-border-radius-lg: 30px;
+
+// //  FONT FAMILY
+$font-family-base: $font-regular !important;
+
+// FORM
+$form-group-margin-bottom: 30px;
+$input-height: 42px;
+
+// CARD
+$card-border-width: 0;
+$card-border-color: transparent;
+
+.card {
+  box-shadow: $main-box-shadow;
+}
+
+// DROP DOWN
+$dropdown-spacer: 1rem;
+$dropdown-min-width: 15rem;
+$card-border-radius: 10px;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

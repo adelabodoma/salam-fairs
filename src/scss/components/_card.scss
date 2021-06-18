@@ -1,0 +1,6 @@
+.card {
+    @extend .utl-card-hover;
+	@include media-breakpoint-down(sm) {
+	  margin-bottom: 20px;
+	}
+  }

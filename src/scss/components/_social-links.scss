@@ -1,0 +1,28 @@
+.social-links {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    border-radius: 50%;
+    font-size: rem(12);
+  }
+
+  &__item {
+    transition: $transition-type;
+    &:not(:last-child) {
+      .icon {
+        margin-#{$right}: 15px;
+      }
+    }
+    &:hover {
+    transform: translateY(-5px);
+    }
+  }
+}

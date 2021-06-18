@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+// ABSTRACT
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins",
+  "abstracts/custom";
+
+// BASE
+@import "base/rest", "base/base", "base/fonts", "base/typography", "base/rest",
+  "base/icon/style.scss";
+
+@import "abstracts/helpers";
+
+// COMPONENT
+@import "components/carousel", "components/social-links", "components/scroll",
+  "components/dropdown", "components/spinner", "components/mobile-menu",
+  "components/form", "components/breadcrumb", "components/pagination", "components/card", "components/table";
+
+// PAGES
+@import "pages/home", "pages/news", "pages/library", "pages/images-gallery", "pages/graduates-opinions", "pages/educational-programs", "pages/contact-us";
+
+// LAYOUT
+@import "layout/header", "layout/footer";

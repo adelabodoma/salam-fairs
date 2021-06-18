@@ -1,0 +1,53 @@
+.breadcrumb-container {
+  // height: 56px;
+  padding: 10px 0;
+  background-color: $color-light-grey-3;
+  display: flex;
+  align-items: center;
+
+  .breadcrumb {
+    border-radius: 0;
+    background: none;
+    margin-bottom: 0;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-#{$right}: 30px;
+        position: relative;
+
+        &::after {
+          @include addIcon($icon-left-arrow, 10px);
+          #{$right}: -18px;
+          top: 5px;
+          color: #000;
+          position: absolute;
+        }
+
+        .breadcrumb__link {
+          transition: $transition-type;
+
+          &:hover {
+            color: $primary-color !important;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin: 5px 0;
+      }
+    }
+
+    &__link {
+      color: #000;
+      font-size: rem(14);
+      text-decoration: none;
+    }
+
+    &--mb-0 {
+      margin-bottom: 0;
+    }
+  }
+}
