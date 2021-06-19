@@ -59,6 +59,11 @@
   border: 1px solid $primary-color;
 }
 
+.utl-btn-outline-white {
+  color: $color-white;
+  border: 1px solid $color-white;
+}
+
 .utl-link {
   font-family: $font-bold;
   font-size: rem(14);

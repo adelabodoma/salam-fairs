@@ -1,0 +1,110 @@
+.fairs {
+  color: $color-white;
+
+  &__cards {
+    padding-top: 40px;
+    position: relative;
+  }
+
+  &__card {
+    padding: 30px;
+    border: 0;
+    box-shadow: $main-box-shadow;
+    .swiper-slide {
+      padding-bottom: 10px;
+    }
+    .icon-location::before {
+      color: $color-grey-dark;
+    }
+  }
+}
+
+.temp-fairs {
+  margin-top: 280px;
+  padding: 80px 0;
+  color: $color-dark;
+  position: relative;
+
+  &__cards {
+    position: relative;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    #{$left}: 0;
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 50% 100%);
+    background-color: #d2ac36;
+    opacity: 0.1;
+    width: 70%;
+  }
+}
+
+.latest-news {
+  margin-top: 100px;
+
+  &__card {
+    &--big {
+      .card-body {
+        position: absolute;
+        bottom: 0;
+        * {
+          color: $color-white;
+        }
+      }
+    }
+
+    &__image {
+      margin-#{$right}: 20px;
+    }
+  }
+}
+
+.youtube {
+  margin-top: 280px;
+  padding: 80px 0;
+  color: $color-dark;
+  background-image: url(../img/card-curve.png);
+  background-repeat: no-repeat;
+  height: 100%;
+
+  &__cards {
+    position: relative;
+  }
+
+  &__card {
+    padding-top: 0;
+  }
+}
+
+.partners {
+  padding: 80px 0;
+  color: $color-dark;
+  position: relative;
+
+  &__cards {
+    position: relative;
+  }
+
+  &__card {
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      &__image {
+          width: 80px;
+      }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    #{$left}: 0;
+    clip-path: polygon(49% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #d2ac36;
+    opacity: 0.1;
+    width: 70%;
+  }
+}

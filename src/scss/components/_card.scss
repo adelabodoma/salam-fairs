@@ -3,4 +3,8 @@
 	@include media-breakpoint-down(sm) {
 	  margin-bottom: 20px;
 	}
+	&-text {
+		color: $color-dark;
+		line-height: 24px;
+	}
   }
