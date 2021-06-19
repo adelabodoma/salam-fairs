@@ -3,15 +3,15 @@
   align-items: center;
 
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $primary-color;
-    color: $primary-color;
+    border: 1px solid$color-white;
+    color: $color-white;
     border-radius: 50%;
-    font-size: rem(12);
+    font-size: rem(11);
   }
 
   &__item {
@@ -22,7 +22,7 @@
       }
     }
     &:hover {
-    transform: translateY(-5px);
+      transform: translateY(-5px);
     }
   }
 }

@@ -1,4 +1,9 @@
 .header {
+  background-image: url(../img/hero.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   &__top-nav {
     background-color: $secondary-color;
     height: 60px;
@@ -34,7 +39,11 @@
     }
 
     &__current-date {
-      text-align: #{$right};
+      // text-align: #{$left};
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: none;
     }
   }
 
@@ -76,6 +85,10 @@
       &__button {
         margin-#{$left}: auto;
         margin-#{$right}: 40px;
+      }
+
+      &__image {
+        margin-#{$right}: 10px;
       }
     }
 

@@ -13,10 +13,9 @@
 // COMPONENT
 @import "components/carousel", "components/social-links", "components/scroll",
   "components/dropdown", "components/spinner", "components/mobile-menu",
-  "components/form", "components/breadcrumb", "components/pagination", "components/card", "components/table";
+  "components/form", "components/breadcrumb", "components/pagination", "components/card";
 
 // PAGES
-@import "pages/home", "pages/news", "pages/library", "pages/images-gallery", "pages/graduates-opinions", "pages/educational-programs", "pages/contact-us";
 
 // LAYOUT
 @import "layout/header", "layout/footer";

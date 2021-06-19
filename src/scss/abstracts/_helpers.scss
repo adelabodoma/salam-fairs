@@ -1,7 +1,9 @@
 .utl-separator {
   height: 13px;
-  border: 1px solid $color-grey;
+  width: 1px;
+  background-color: $color-grey;
   margin: 0 20.3px;
+  display: inline-block;
 }
 
 .utl-down-arrow {

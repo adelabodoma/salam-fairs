@@ -27,8 +27,15 @@
     <header class="header">
         <div class="header__top-nav">
             <div class="container">
-                <div class="row">
-                    <div class="col-7 align-items-center d-none d-xl-flex">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-12 col-xl-4">
+                        <div class="header__top-nav__current-date">
+                            <span>‏ الأربعاء 19 مايو 2021</span>
+                            <span class="utl-separator"></span>
+                            <span>‏ الموافق 7 شوّال 1442</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-3">
                         <ul class="social-links">
                             <li class="social-links__item">
                                 <a href="#" class="social-links__item__link">
@@ -51,26 +58,25 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-5">
                         <div class="header__top-nav__account dropdown">
                             <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon" type="button"
                                 id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
                                 تغيير
                                 اللغة</a>
                             <div class="dropdown-menu" aria-labelledby="changeLang">
-                                <!-- <img  class="header__top-nav__account__change-lang__image" src="assets/img/saudi-arabia.svg" alt="Language"> -->
-                                <!-- <img  class="header__top-nav__account__change-lang__image" src="assets/img/united-states.svg" alt="Language"> -->
                                 <a class="dropdown-item" href="#">عربي</a>
                                 <a class="dropdown-item" href="#">English</a>
                             </div>
                             <span class="utl-separator"></span>
                             <a href="#">إنشاء حساب جديد</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-xl-5">
-                        <div class="header__top-nav__current-date">
-                            <span>‏ الأربعاء 19 مايو 2021</span>
                             <span class="utl-separator"></span>
-                            <span>‏ الموافق 7 شوّال 1442</span>
+                            <a href="#">بث مباشر</a>
+                            <span class="utl-separator"></span>
+                            <div class="d-inline-block">
+                                <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,7 +85,7 @@
         <nav class="header__nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 d-flex">
+                    <div class="col-md-7 d-flex">
                         <a href="" class="header__nav__logo">
                             <img src="assets/img/logo.png" alt="Logo" class="header__nav__logo-img">
                         </a>
@@ -88,12 +94,12 @@
                                 <a href="#" class="header__nav__item__link">الرئيسية</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">عن المنصة</a>
+                                <a href="#" class="header__nav__item__link">من نحن </a>
                             </li>
                             <li class="header__nav__item">
                                 <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">البرامج
-                                    التعليمية</a>
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المركز
+                                    الاعلامى</a>
 
                                 <ul class="dropdown-menu" aria-labelledby="program">
                                     <li class="dropdown-submenu">
@@ -132,7 +138,7 @@
                             </li>
                             <li class="header__nav__item">
                                 <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">خدمات المنصة</a>
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> مركز الوسائط</a>
                                 <ul class="dropdown-menu" aria-labelledby="program">
                                     <li class="dropdown-submenu">
                                         <a class="dropdown-item" href="#">برنامج رقم 1</a>
@@ -169,20 +175,14 @@
                                 </ul>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">المكتبة الرقمية</a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">تواصل معنا</a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a id="openSearchBtn" href="#" class="header__nav__item__link"><i
-                                        class="icon icon-search header__nav__item__link--search"></i></a>
+                                <a href="#" class="header__nav__item__link">اتصل بنا</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-4 header__nav__login">
+                    <div class="col-md-5 header__nav__login">
+                        <img src="assets/img/apple-store.png" class="header__nav__login__image" alt="Apple Store">
+                        <img src="assets/img/google-play.png" class="header__nav__login__image" alt="Google Play">
                         <button class="btn utl-btn-primary header__nav__login__button">تسجيل الدخول</button>
-                        <img src="assets/img/vision.png" alt="vision">
                     </div>
                 </div>
             </div>
@@ -216,9 +216,6 @@
                         <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
                         <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
                     </div>
-                    <a href="#">
-                        <img src="assets/img/vision.png" alt="vision" class="header__mobile-nav__vision">
-                    </a>
                 </div>
             </div>
         </div>
