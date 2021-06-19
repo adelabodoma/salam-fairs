@@ -1,3 +1,111 @@
 .footer {
+	background-image: url(../img/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+    margin-top: 100px;
 
-}
+    &__form {
+        position: relative;
+        margin-top: 15px;
+
+        &__input {
+            width: 100%;
+            padding: 0 13px;
+            height: 62px;
+            border-radius: 6px;
+            outline: 0;
+            border: 0;
+
+            &:hover, &:focus, &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        &__button {
+            position: absolute;
+            #{$right}: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+    }
+
+    &__quote {
+        padding: 40px 70px;
+        background-color: $color-white;
+        border-radius: 93px;
+        position: absolute;
+        top: -220px;
+
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+
+        &__text {
+            color: $color-light-grey;
+            width: 50%;
+            line-height: 24px;
+            margin-#{$left}: 50px
+        }
+
+        &::after {
+            @include addIcon($icon-qoute, 60px);
+            color: $primary-color;
+            position: absolute;
+            #{$right}: 130px;
+            opacity: .5;
+        }
+    }
+
+	&__company-info {
+		display: flex;
+	}
+
+	&__info {
+	  margin-#{$left}: 40px;
+  
+	  & > [class^="heading"] {
+		color: $color-white;
+		margin-bottom: 20px;
+	  }
+  
+	  .heading-3 {
+		color: $color-grey;
+	  }
+	}
+  
+	&__list {
+	  &__item {
+		margin-bottom: 20px;
+  
+		&__link {
+		  color: $color-white;
+		  @extend .utl-hover-primary;
+		}
+	  }
+	}
+  
+	&__copy-rights {
+	  padding-top: 40px;
+	  margin-top: 40px;
+	  border-top: 2px dashed $primary-color;
+	  text-align: center;
+      color: $color-white;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+	}
+
+	@include media-breakpoint-down(md) { 
+		&__company-info {
+			margin-bottom: 30px;
+			align-items: center;
+		}
+
+		&__logo {
+			height: 150px;
+		}
+	   }
+  }

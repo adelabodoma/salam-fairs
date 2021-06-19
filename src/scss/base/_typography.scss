@@ -58,6 +58,12 @@
     color: $color-dark;
 }
 
+.heading-bold-3 {
+    font-size: rem(14);
+    font-family: $font-bold;
+    color: $color-white;
+}
+
 @include media-breakpoint-down(sm){
     .heading-1 {
         font-size: rem(25);
