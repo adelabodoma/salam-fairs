@@ -1,8 +1,10 @@
 .header {
+ &.home {
   background-image: url(../img/hero.png);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+ }
 
   &__top-nav {
     background-color: $secondary-color;
