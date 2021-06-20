@@ -108,7 +108,7 @@ function scrollFunction(topButton, headerNav) {
     headerNav.style.top = '0px';
   } else {
     topButton.style.display = "none";
-    headerNav.style.top = '60px';
+    // headerNav.style.top = '60px';
   }
 }
 

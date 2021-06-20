@@ -1,5 +1,7 @@
 .fairs {
   color: $color-white;
+  position: relative;
+  top: -300px;
 
   &__cards {
     padding-top: 40px;
@@ -20,8 +22,9 @@
 }
 
 .temp-fairs {
-  margin-top: 280px;
-  padding: 80px 0;
+  //   margin-top: 280px;
+  //   padding: 80px 0;
+  margin-top: -100px;
   color: $color-dark;
   position: relative;
 
@@ -38,6 +41,12 @@
     background-color: #d2ac36;
     opacity: 0.1;
     width: 70%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -62,7 +71,7 @@
 }
 
 .youtube {
-  margin-top: 280px;
+  margin-top: 80px;
   padding: 80px 0;
   color: $color-dark;
   background-image: url(../img/card-curve.png);
@@ -76,6 +85,13 @@
   &__card {
     padding-top: 0;
   }
+
+  @include media-breakpoint-down(md) {
+    h2,
+    h3 {
+      color: $color-white;
+    }
+  }
 }
 
 .partners {
@@ -88,12 +104,12 @@
   }
 
   &__card {
-      display: flex;
-      align-items: center;
-      padding: 15px 30px;
-      &__image {
-          width: 80px;
-      }
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    &__image {
+      width: 80px;
+    }
   }
 
   &::after {
@@ -107,28 +123,34 @@
     opacity: 0.1;
     width: 70%;
   }
+
+  @include media-breakpoint-down(sm) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .mobile-app {
-    // padding-top: var(--section-gap);;
-    @include gap(padding-top, 120px);
-    padding-bottom: 100px;
-    
-    &__main-image {
-      width: 400px;
-      @include media-breakpoint-down(sm) {
-        width: 200px;
-        margin-bottom: 20px;
-      }
-    }
-  
-    &__link {
-      &:not(:last-child) {
-        margin-#{$right}: 20px;
-      }
-    }
-  
-    &__store {
-      margin-top: 50px;
+  // padding-top: var(--section-gap);;
+  @include gap(padding-top, 120px);
+  padding-bottom: 100px;
+
+  &__main-image {
+    width: 400px;
+    @include media-breakpoint-down(sm) {
+      width: 200px;
+      margin-bottom: 20px;
     }
   }
+
+  &__link {
+    &:not(:last-child) {
+      margin-#{$right}: 20px;
+    }
+  }
+
+  &__store {
+    margin-top: 50px;
+  }
+}
