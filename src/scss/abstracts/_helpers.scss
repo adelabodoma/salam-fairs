@@ -78,6 +78,7 @@
 .utl-form-label {
   font-size: rem(14);
   font-family: $font-bold;
+  margin-bottom: 10px;
 }
 
 .utl-form-label-dark {
@@ -177,4 +178,17 @@
   &:hover {
     transform: unset;
   }
+}
+
+.utl-section-header {
+    &__content {
+      background-color: $color-white;
+      padding: 40px;
+      border-radius: 6px;
+      box-shadow: $main-box-shadow;
+      position: relative;
+      top: -100px;
+      width: 100%;
+      text-align: center;
+    }
 }

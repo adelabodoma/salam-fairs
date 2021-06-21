@@ -1,44 +1,28 @@
 .about {
-  &__header {
-    height: 240px;
-    background-image: url(../img/about.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  @include addHeader("../img/about.png");
 
-    &__content {
-      background-color: $color-white;
-      padding: 40px;
-      border-radius: 6px;
-      box-shadow: $main-box-shadow;
-      position: relative;
-      top: -100px;
-      width: 100%;
-      display: flex;
-      align-items: center;
+  .utl-section-header__content {
+    display: flex;
+    align-items: center;
 
-      &__info {
-        margin-#{$left}: 60px;
+    &__info {
+      margin-#{$left}: 60px;
 
-        &__text {
-          line-height: 24px;
-        }
-      }
-
-      @include media-breakpoint-down(sm){
-          flex-direction: column;
-          padding: 20px;
-          &__info {
-              margin-#{$left}: 0;
-          }
-          img {
-              margin: 20px auto;
-          }
+      &__text {
+        line-height: 24px;
       }
     }
-  }
 
-  &__cards {
-    // margin-top: 200px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      padding: 20px;
+      &__info {
+        margin-#{$left}: 0;
+      }
+      img {
+        margin: 20px auto;
+      }
+    }
   }
 
   &__card {
@@ -69,10 +53,10 @@
         line-height: 24px;
       }
 
-      @include media-breakpoint-down(sm){
-          position: relative;
-          left: unset!important;
-          right: unset!important;
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        left: unset !important;
+        right: unset !important;
       }
     }
 
@@ -135,10 +119,10 @@
       }
     }
 
-    @include media-breakpoint-down(sm){
-        &__text {
-            width: 100%;
-        }
+    @include media-breakpoint-down(sm) {
+      &__text {
+        width: 100%;
+      }
     }
   }
 

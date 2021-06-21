@@ -25,3 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
   content: $name;
 }
+
+@mixin addHeader($backgroundPath) {
+  &::before {
+    height: 240px;
+    width: 100%;
+    background-image: url($backgroundPath);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+  }
+}
