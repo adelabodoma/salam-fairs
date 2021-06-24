@@ -1,0 +1,78 @@
+.video-galleries {
+  @include addHeader("../img/about.png");
+
+  &__cards {
+    margin-top: 40px;
+  }
+
+  &__card {
+    margin-bottom: 30px;
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      background-color: $color-white;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: rem(20);
+      box-shadow: $main-box-shadow;
+
+      &::before {
+        color: $primary-color;
+      }
+    }
+
+    &__link {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        content: "";
+      }
+    }
+
+    .card-body {
+      margin-top: 30px;
+    }
+
+    &__image {
+      // height: 300px;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__video__card {
+    margin-bottom: 30px;
+
+    position: relative;
+    .icon {
+      width: 60px;
+      height: 60px;
+      background-color: $color-white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        color: $primary-color;
+      }
+    }
+  }
+}

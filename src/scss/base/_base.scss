@@ -27,6 +27,11 @@ body {
       z-index: 9999;
     }
   }
+
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: -7% 22%;
+  background-blend-mode: luminosity;
 }
 
 html {

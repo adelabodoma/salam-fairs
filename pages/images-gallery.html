@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="../assets/css/swiper.min.css">
     <link rel="stylesheet" href="../assets/css/jquery.fancybox.css">
     <link rel="stylesheet" href="../assets/css/style-rtl.min.css">
-    <title>Salam Fairs - Media Center</title>
+    <title>Salam Fairs - Images Galleries List</title>
 </head>
 
 <body>
     <button id="gotToTopButton" title="Go to top">
         <i class="icon icon-down-arrow"></i>
     </button>
-
+    
     <div class="loader">
         <div class="loader__item">
             <img src="../assets/img/logo.png" alt="Logo">
@@ -354,194 +354,91 @@
                     <a class="breadcrumb__link" href="#">الرئيسية</a>
                 </li>
                 <li class="breadcrumb__item">
-                    <a class="breadcrumb__link" href="#">المركز الإعلامي</a>
+                    <a class="breadcrumb__link" href="#">معرض الفيديو</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="#">تدشين المقر الرئيسي لمعارض ومتاحف السيرة النبوية والحضارة الإسلامية بالمدينة المنورة</a>
                 </li>
             </div>
         </div>
     </ul>
     <!-- BREADCRUMB SECTION END -->
 
-    <!-- Media Center SECTION START -->
-    <section class="media-center">
+    <!-- Images Gallery SECTION START -->
+    <section class="images-gallery">
         <div class="container">
             <div class="utl-section-header">
                 <div class="utl-section-header__content">
-                    <h2 class="heading-2">المركز الإعلامي</h2>
+                    <h2 class="heading-2">تدشين المقر الرئيسي لمعارض ومتاحف السيرة النبوية والحضارة الإسلامية بالمدينة المنورة</h2>
                 </div>
             </div>
-            <form class="media-center__form">
-                <div class="row align-items-end">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <div class="form-input-search">
-                                <input type="text" placeholder="كلمة البحث" class="form-input form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="sort" class="utl-form-label">ترتيب بواسطة</label>
-                            <select name="sort" id="sort" class="form-control form-select">
-                                <option value="1">--اختر--</option>
-                                <option value="1">الاسم</option>
-                                <option value="1">العنوان</option>
-                                <option value="1">التاريخ</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="sort" class="utl-form-label">الجرائد / دورية النشر</label>
-                            <select name="sort" id="sort" class="form-control form-select">
-                                <option value="1">--اختر--</option>
-                                <option value="1">الاسم</option>
-                                <option value="1">العنوان</option>
-                                <option value="1">التاريخ</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="sort" class="utl-form-label">العرض</label>
-                            <select name="sort" id="sort" class="form-control form-select">
-                                <option value="1">--اختر--</option>
-                                <option value="1">الاسم</option>
-                                <option value="1">العنوان</option>
-                                <option value="1">التاريخ</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </form>
 
-            <div class="media-center__cards">
+            <div class="images-gallery__cards">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 news__card">
-                        <div class="card media-center__card">
-                            <img class="card-img-top" src="../assets/img/card-1.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title heading-bold-2">فرقان توقع عقد شراكة مع جمعية الدعوة والإرشاد وتوعية
-                                    الجاليات بالعزيزية بجدة</h5>
-                                <p class="card-text">بعون الله تعالى وتوفيقه وقعت جمعية فرقان ممثلة في مركز
-                                    ثقات للتدريب</p>
-                                <div class="d-flex align-items-center justify-content-between mt-4">
-                                    <button class="btn utl-btn-outline-primary d-flex align-items-center"><i class="icon icon-share"></i> رابط الخبر</button>
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card images-gallery__video__card">
+                            <a href="../assets/img/card-1.png" data-fancybox="media-images" class="images-gallery__card__link">
+                                <img src="../assets/img/card-1.png" class="images-gallery__card__image" alt="news card">
+                            </a>
                         </div>
                     </div>
+
                     <nav aria-label="Page navigation example" class="w-100">
                         <ul class="pagination pagination-items">
                             <li class="page-item">
@@ -565,7 +462,7 @@
             </div>
         </div>
     </section>
-    <!-- Media Center SECTION START -->
+    <!-- Images Gallery SECTION START -->
 
 
 

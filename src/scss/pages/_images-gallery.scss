@@ -1,0 +1,9 @@
+.images-gallery {
+  @include addHeader("../img/about.png");
+
+  &__card{
+      &__image{
+          width: 100%;
+      }
+  }
+}

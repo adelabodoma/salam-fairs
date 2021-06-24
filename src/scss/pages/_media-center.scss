@@ -1,3 +1,15 @@
 .media-center {
     @include addHeader('../img/about.png');
+
+    &__cards {
+        margin-top: 40px;
+    }
+
+    &__card {
+        margin-bottom: 30px;
+
+        .icon {
+            margin-#{$right}: 10px
+        }
+    }
 }
