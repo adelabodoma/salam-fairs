@@ -1,0 +1,57 @@
+.download-app {
+  @include addHeader("../img/about.png");
+
+  &__title {
+    line-height: 41px;
+    margin-top: 10px;
+  }
+
+  &__text {
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    height: 40px;
+
+    &:not(:last-child) {
+      margin-#{$right}: 10px;
+    }
+  }
+
+  &__card {
+    margin: 100px 0;
+
+    &__text {
+      line-height: 24px;
+    }
+
+    &__title {
+      margin: 20px 0;
+    }
+
+    &__image {
+      width: 70%;
+      margin-#{$left}: auto;
+      display: block;
+
+      @include media-breakpoint-down(sm){
+          margin: 0 auto!important;
+          margin-top: 30px!important;
+      }
+    }
+
+    &--right {
+      flex-direction: row-reverse;
+
+      .download-app__card__image{
+        margin-#{$right}: auto;
+        margin-#{$left}: unset;
+      }
+    }
+  }
+}
