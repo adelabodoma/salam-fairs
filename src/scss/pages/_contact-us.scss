@@ -1,0 +1,68 @@
+.contact-us {
+  @include addHeader("../img/about.png");
+
+  .card {
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .value {
+      font-size: rem(16);
+      font-family: $font-bold;
+      color: $primary-color;
+    }
+
+    .card-label {
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: rem(22);
+
+      &::before {
+        color: $color-white;
+      }
+    }
+
+    & > * {
+      display: block;
+    }
+  }
+
+  .social-links {
+    &__item {
+      &__link {
+        .icon {
+          width: 44px;
+          height: 44px;
+          background-color: $primary-color;
+          font-size: rem(16);
+        }
+      }
+
+      &:nth-child(1):hover .icon {
+        background-color: #d42428;
+      }
+      &:nth-child(2):hover .icon {
+        background-color: #3b5998;
+      }
+      &:nth-child(3):hover .icon {
+        background-color: #55acee;
+      }
+      &:nth-child(4):hover .icon {
+        background: linear-gradient(#ffdd55, #ff543e, #c837ab);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.login {
+  margin-top: 60px;
+
+  &__form {
+    padding: 60px;
+    box-shadow: $main-box-shadow;
+    border-radius: 6px;
+
+    @include media-breakpoint-down(sm){
+        padding: 20px;
+    }
+  }
+}

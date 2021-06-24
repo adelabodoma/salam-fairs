@@ -1,0 +1,58 @@
+.FAQ {
+  @include addHeader("../img/about.png");
+
+  &__accordion {
+    .card {
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: rem(16);
+      font-family: $font-bold;
+      color: $color-grey-dark;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:hover,
+      &:focus-visible,
+      &:focus {
+        color: $primary-color;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+      }
+
+      &[aria-expanded="true"] {
+        color: $primary-color;
+        .FAQ__accordion__title__button {
+          background-color: $primary-color;
+          &::after {
+            @include addIcon($icon-bag, 20px);
+            color: $color-white;
+          }
+        }
+      }
+
+      &__button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
+        color: $primary-color;
+        font-family: $font-extra-bold;
+        display: inline-block;
+        font-size: rem(25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: $primary-color;
+        &::after {
+          @include addIcon($icon-alert, 11px);
+        }
+      }
+    }
+  }
+}

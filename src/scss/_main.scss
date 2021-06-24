@@ -13,10 +13,13 @@
 // COMPONENT
 @import "components/carousel", "components/social-links", "components/scroll",
   "components/dropdown", "components/spinner", "components/mobile-menu",
-  "components/form", "components/breadcrumb", "components/pagination", "components/card";
+  "components/form", "components/breadcrumb", "components/pagination",
+  "components/card";
 
 // PAGES
-@import "pages/home", "pages/about", "pages/media-center", "pages/impressions-visitors", "pages/video-galleries", "pages/images-gallery";
+@import "pages/home", "pages/about", "pages/media-center",
+  "pages/impressions-visitors", "pages/video-galleries", "pages/images-gallery",
+  "pages/contact-us", "pages/FAQ", "pages/login";
 
 // LAYOUT
 @import "layout/header", "layout/footer";

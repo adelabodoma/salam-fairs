@@ -99,6 +99,16 @@ jQuery(document).ready(function ($) {
     }
   })
 
+
+  /***********************************/
+  $('#FAQAccordion').collapse({
+    toggle: false
+  })
+
+  $('#FAQAccordion').on('hidden.bs.collapse', function (event) {
+    console.log(event)
+  })
+
 });
 
 
