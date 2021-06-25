@@ -8,6 +8,15 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  const newsSwiper = new Swiper(".news-details__gallery__swiper", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".news-details__gallery__swiper__controls .swiper-button-next",
+      prevEl: ".news-details__gallery__swiper__controls .swiper-button-prev"
+    },
+  });
+
   const sliderSelectors = ['.fairs__swiper', '.temp-fairs__swiper', '.youtube__swiper', '.partners__swiper', '.partners-2__swiper', '.sponsor__swiper', '.sponsor-2__swiper']
 
   sliderSelectors.forEach(selector => {

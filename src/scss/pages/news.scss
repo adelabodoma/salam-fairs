@@ -1,0 +1,144 @@
+.news {
+  @include addHeader("../img/about.png");
+
+  &__cards {
+    margin-top: 40px;
+  }
+
+  &__card {
+    margin-bottom: 100px;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-white;
+      border-radius: 6px;
+      padding: 30px;
+      box-shadow: $main-box-shadow;
+
+      .news__card__title {
+        // color: $primary-color;
+        font-size: rem(26);
+        font-family: $font-bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+      }
+
+      .news__card__text {
+        line-height: 24px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        left: unset !important;
+        right: unset !important;
+      }
+    }
+
+    &--left &__content {
+      #{$left}: -120px;
+    }
+
+    &--right {
+      .news__card__content {
+        #{$right}: -120px;
+      }
+
+      & > .row {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__event {
+    margin-bottom: 30px;
+    @extend .card;
+    .news__card__content {
+      position: static;
+      transform: none;
+      display: flex;
+      align-items: center;
+
+      .date {
+        font-size: rem(80);
+        font-family: $font-bold;
+      }
+
+      .icon {
+        margin-#{$right}: 10px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      &__date,
+      &__info {
+        flex: 1 !important;
+        width: 100%;
+      }
+    }
+
+    &__date {
+      flex: 1;
+    }
+
+    &__info {
+      flex: 4;
+    }
+  }
+
+  &-details {
+    margin-top: 40px;
+    &::before {
+      display: none;
+    }
+
+    &__content {
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        line-height: 36px;
+        font-size: rem(16);
+        margin-bottom: 40px;
+      }
+
+      &__title {
+        margin-bottom: 40px;
+      }
+
+      .date {
+        font-size: rem(80);
+        font-family: $font-bold;
+      }
+
+      .icon {
+        margin-#{$right}: 10px;
+      }
+
+      .share-icon {
+        font-size: rem(30);
+      }
+    }
+
+    &__gallery {
+      position: relative;
+
+      &__swiper__controls {
+        width: 90%;
+      }
+    }
+  }
+}
