@@ -10,6 +10,7 @@ body {
 }
 
 body {
+  position: relative;
   &.backdrop {
 	  height: 100vh;
 	  overflow: hidden;
@@ -32,6 +33,22 @@ body {
   background-repeat: no-repeat;
   background-position: -7% 22%;
   background-blend-mode: luminosity;
+
+  &::after {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: -7% 22%;
+    background-blend-mode: luminosity;
+    content: "";
+    width: 40%;
+    height: 500px;
+    margin-right: auto;
+    position: absolute;
+    bottom: 11%;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+  }
 }
 
 html {

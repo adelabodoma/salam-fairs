@@ -21,10 +21,11 @@
       align-items: center;
     }
 
-    &__top, &__bottom {
-        @include media-breakpoint-down(sm){
-            flex-direction: column;
-        }
+    &__top,
+    &__bottom {
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -52,51 +53,60 @@
     }
 
     &__location {
-        color: $primary-color;
-        font-family: $font-bold;
+      color: $primary-color;
+      font-family: $font-bold;
     }
   }
 
   &__accordion {
-      &__title {
-          &__icon {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 40px;
-              height: 40px;
-              background-color: #F8E9EA;
-              border-radius: 50%;
-              margin-#{$right}: 10px;
-          }
+    &__title {
+      &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #f8e9ea;
+        border-radius: 50%;
+        margin-#{$right}: 10px;
+        color: $primary-color;
+        font-size: rem(17);
+        &::before {
+          color: currentColor;
+        }
       }
+    }
 
-      .card {
-          margin-bottom: 20px;
-          padding: 30px;
-      }
+    .card {
+      margin-bottom: 20px;
+      padding: 30px;
+    }
 
-      .FAQ__accordion__title {
-          padding: 0;
-      }
+    .FAQ__accordion__title {
+      padding: 0;
+    }
   }
 
   &__reserve {
-      background-image: linear-gradient(rgba($primary-color, .7), rgba($primary-color, .7)), url(../img/reserve-form.png);
+    background-image: linear-gradient(
+        rgba($primary-color, 0.7),
+        rgba($primary-color, 0.7)
+      ),
+      url(../img/reserve-form.png);
     //   background-color: rgba($color: $primary-color, $alpha: .7);
-      background-size: cover;
-      border-radius: 6px;
-      &__form {
-          padding: 30px;
+    background-size: cover;
+    border-radius: 6px;
+    &__form {
+      padding: 30px;
 
-          & > * {
-              color: $color-white;
-          }
-
-          .form-group {
-              margin-bottom: 20px;
-          }
+      & > * {
+        color: $color-white;
       }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .social-links {
@@ -124,6 +134,4 @@
       }
     }
   }
-
-
 }

@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
   const swiper = new Swiper(".header__swiper", {
     slidesPerView: 1,
     direction: "vertical",
+    spaceBetween: 30,
     pagination: {
       el: ".header__swiper .swiper-pagination",
       clickable: true,
@@ -70,19 +71,30 @@ jQuery(document).ready(function ($) {
     $('body').addClass('backdrop');
   })
 
-  $('#openSearchBtnWithMobile').on('click', () => {
-    topFunction()
-    $('.header__nav').show();
-    $('.header__nav__search').show().css('bottom', '-85px');;
-    $('.header__nav > .container').hide();
 
+  $(document).on("click", function (event) {
+    const ignore = ['.header__nav__search', '#openSearchBtn', '#openSearchBtnWithMobile'];
+    // var $trigger = $(".header__nav__search");
+    // var $trigger2 = $("#openSearchBtn");
+    // var $trigger3 = $('#openSearchBtnWithMobile')
+
+    if ($(event.target).closest(ignore.join(',')).length === 0) {
+      $('.header__nav__search').hide();
+      $('body').removeClass('backdrop');
+    }
+  });
+
+  $('#openSearchBtnWithMobile').on('click', (event) => {
+    topFunction();
+    event.preventDefault();
+    $('.header__nav__search').show().css('bottom', '-85px')
     $('body').addClass('backdrop');
   })
 
-  $('#closeSearchBtn').on('click', () => {
-    $('.header__nav__search').toggle();
-    $('body').removeClass('backdrop');
-  })
+  // $('#closeSearchBtn').on('click', () => {
+  //   $('.header__nav__search').toggle();
+  //   $('body').removeClass('backdrop');
+  // })
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");

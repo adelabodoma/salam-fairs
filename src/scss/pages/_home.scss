@@ -18,6 +18,52 @@
     .icon-location::before {
       color: $color-grey-dark;
     }
+
+    &__date {
+     &__container {
+      margin-top: 30px;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      & > * {
+        color: $color-white;
+      }
+
+      @include media-breakpoint-down(sm){
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 10px;
+        .date {
+          margin-bottom: 10px;
+        }
+      }
+     }
+
+      .label {
+        font-size: rem(15);
+        margin-bottom: 5px;
+      }
+      .title {
+        font-size: rem(15);
+        margin-bottom: 10px;
+      }
+      .date {
+        direction: ltr;
+        font-size: rem(16);
+        .icon {
+          margin-#{$right}: 10px
+        }
+      }
+    }
+  }
+
+  @media screen and(max-height: 768px){
+    top: -200px;
   }
 }
 
@@ -25,6 +71,7 @@
   //   margin-top: 280px;
   //   padding: 80px 0;
   margin-top: -100px;
+  padding-top: 40px;
   color: $color-dark;
   position: relative;
 
