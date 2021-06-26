@@ -1,0 +1,129 @@
+.event-details {
+  @include addHeader("../img/about.png");
+
+  &__card {
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $color-light-grey-3;
+    }
+
+    &__bottom {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__top, &__bottom {
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+        }
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+
+    &__title {
+      color: #8d898a;
+      margin-bottom: 5px;
+    }
+
+    &__icon {
+      color: $primary-color;
+      font-size: rem(30);
+      margin-#{$right}: 20px;
+      &::before {
+        color: currentColor;
+      }
+    }
+
+    &__date {
+      direction: ltr;
+      font-size: rem(23);
+    }
+
+    &__location {
+        color: $primary-color;
+        font-family: $font-bold;
+    }
+  }
+
+  &__accordion {
+      &__title {
+          &__icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 40px;
+              height: 40px;
+              background-color: #F8E9EA;
+              border-radius: 50%;
+              margin-#{$right}: 10px;
+          }
+      }
+
+      .card {
+          margin-bottom: 20px;
+          padding: 30px;
+      }
+
+      .FAQ__accordion__title {
+          padding: 0;
+      }
+  }
+
+  &__reserve {
+      background-image: linear-gradient(rgba($primary-color, .7), rgba($primary-color, .7)), url(../img/reserve-form.png);
+    //   background-color: rgba($color: $primary-color, $alpha: .7);
+      background-size: cover;
+      border-radius: 6px;
+      &__form {
+          padding: 30px;
+
+          & > * {
+              color: $color-white;
+          }
+
+          .form-group {
+              margin-bottom: 20px;
+          }
+      }
+  }
+
+  .social-links {
+    &__item {
+      &__link {
+        .icon {
+          width: 44px;
+          height: 44px;
+          background-color: $primary-color;
+          font-size: rem(16);
+        }
+      }
+
+      &:nth-child(1):hover .icon {
+        background-color: #d42428;
+      }
+      &:nth-child(2):hover .icon {
+        background-color: #3b5998;
+      }
+      &:nth-child(3):hover .icon {
+        background-color: #55acee;
+      }
+      &:nth-child(4):hover .icon {
+        background: linear-gradient(#ffdd55, #ff543e, #c837ab);
+      }
+    }
+  }
+
+
+}

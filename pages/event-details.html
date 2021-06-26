@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="../assets/css/style-rtl.min.css">
+    <title>Salam Fairs -Event Details</title>
+</head>
+
+<body>
+    <button id="gotToTopButton" title="Go to top">
+        <i class="icon icon-down-arrow"></i>
+    </button>
+
+    <div class="loader">
+        <div class="loader__item">
+            <img src="../assets/img/logo.png" alt="Logo">
+            <div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER SECTION START -->
+    <header class="header">
+        <div class="header__top-nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-12 col-xl-4">
+                        <div class="header__top-nav__current-date">
+                            <span>‏ الأربعاء 19 مايو 2021</span>
+                            <span class="utl-separator"></span>
+                            <span>‏ الموافق 7 شوّال 1442</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-3">
+                        <ul class="social-links">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-5">
+                        <div class="header__top-nav__account dropdown">
+                            <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon" type="button"
+                                id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
+                                تغيير
+                                اللغة</a>
+                            <div class="dropdown-menu" aria-labelledby="changeLang">
+                                <a class="dropdown-item" href="#">عربي</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                            <span class="utl-separator"></span>
+                            <a href="#">إنشاء حساب جديد</a>
+                            <span class="utl-separator"></span>
+                            <a href="#">بث مباشر</a>
+                            <span class="utl-separator"></span>
+                            <div class="d-inline-block">
+                                <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 d-flex">
+                        <a href="" class="header__nav__logo">
+                            <img src="../assets/img/logo.png" alt="Logo" class="header__nav__logo-img">
+                        </a>
+                        <ul class="header__nav__items">
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">الرئيسية</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">من نحن </a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المركز
+                                    الاعلامى</a>
+
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> مركز الوسائط</a>
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">اتصل بنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 header__nav__login">
+                        <img src="../assets/img/apple-store.png" class="header__nav__login__image" alt="Apple Store">
+                        <img src="../assets/img/google-play.png" class="header__nav__login__image" alt="Google Play">
+                        <button class="btn utl-btn-primary header__nav__login__button">تسجيل الدخول</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav__search">
+                <form action="#" class="header__nav__search__form container">
+                    <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
+                    <button class="header__nav__search__form__submit">
+                        <i class="icon icon-search header__nav__item__link--search"></i>
+                    </button>
+                    <button class="header__nav__search__form__close-btn" id="closeSearchBtn">x</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="header__mobile-nav">
+            <div class="container header__mobile-nav__container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                    <a href="#" class="header__mobile-nav__logo">
+                        <img src="../assets/img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <i class="icon icon-search header__mobile-nav__search-button" id="openSearchBtnWithMobile"></i>
+                    <a href="#" class="header__mobile-nav__account" type="button" id="changeLang" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> ‏
+                        <i class="icon icon-user"></i>
+                    </a>
+                    <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
+                        <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
+                        <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__mobile">
+            <nav class="nav-drill">
+                <a href="#" id="closeMenu">x</a>
+                <ul class="nav-items nav-level-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            من نحن
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            المركز الإعلامي
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            مركز الوسائط
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            اتصل بنا
+                        </a>
+                    </li>
+
+                    <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
+                        id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
+                        تغيير
+                        اللغة</a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">عربي</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
+                    <ul class="social-links mt-5 mx-3">
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- BREADCRUMB SECTION START -->
+    <ul class="breadcrumb-container">
+        <div class="container">
+            <div class="breadcrumb">
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="#">الرئيسية</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="#">معرض السيرة النبوية والحضارة الإسلامية - المقرّ الرئيسي</a>
+                </li>
+            </div>
+        </div>
+    </ul>
+    <!-- BREADCRUMB SECTION END -->
+
+    <!-- EVENT DETAILS SECTION START -->
+    <section class="event-details">
+        <div class="container">
+            <div class="utl-section-header">
+                <div class="utl-section-header__content">
+                    <h2 class="heading-2">معرض السيرة النبوية والحضارة الإسلامية - المقرّ الرئيسي</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="heading-3-bold">معلومات المعرض</h3>
+                    <div class="card event-details__card">
+                        <div class="event-details__card__top">
+                            <div class="event-details__time">
+                                <i class="icon icon-calender event-details__time__icon"></i>
+                                <div>
+                                    <h3 class="event-details__time__title">من ربيع الآخر</h3>
+                                    <h2 class="event-details__time__date heading-2">2020/12/10 - AM 12:00</h2>
+                                </div>
+                            </div>
+                            <div class="event-details__time">
+                                <i class="icon icon-calender event-details__time__icon"></i>
+                                <div>
+                                    <h3 class="event-details__time__title">إلي جمادى الأول</h3>
+                                    <h2 class="event-details__time__date heading-2">2020/12/10 - AM 12:00</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-details__card__bottom">
+                            <!-- <div class="d-flex align-items-center justify-content-between"> -->
+                                <div class="event-details__time">
+                                    <i class="icon icon-location event-details__time__icon"></i>
+                                    <div>
+                                        <h3 class="event-details__time__title">المكان</h3>
+                                        <h2 class="event-details__time__date heading-2">المدينة المنورة</h2>
+                                    </div>
+                                </div>
+                                <a href="" class="event-details__time__location"> الموقع علي الخريطة</a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <h3 class="heading-3-bold">تفاصيل المعرض</h3>
+
+                    <div class="card event-details__card">
+                        <p class="heading-3">
+                            معرض السيرة النبوية والحضارة الإسلامية - المقرّ الرئيسي
+                            «المعرض والمتحف الدولي للسيرة النبوية والحضارة الإسلامية» - المقرّ الرئيسيّ
+                        </p>
+
+                        <h3 class="heading-3-grey mt-5 mb-2">بإشراف ورعاية </h3>
+                        <h3 class="heading-7">رابطة العالم الإسلامي</h3>
+                        <h3 class="heading-3-grey mt-5 mb-2">إدارة وتشغيل </h3>
+                        <h3 class="heading-7">مؤسسة أوقاف السلام</h3>
+                        <h3 class="heading-7 mb-5">وشركة معارض السلام الدولية للمعارض والمؤتمرات</h3>
+                        <p class="heading-3">
+                            يقام المعرض في ساحة المسجد النبوي الشريف، على مساحة أربعة آلاف (4000) متر مربع، ويشتمل على
+                            أكثر من عشرين جناحًا، تمثِّل صَرْحًا ثقافيًّا ومنصَّة علميَّة عالميَّة حضارية عصريَّة،
+                            تقدِّم الإسلام في سمته الجليل، وثوبه الجليل، وأنه دين الحُبّ والسلام والعدل والرحمة والعفو
+                            والتسامح والاعتدال والتعايش، من خلال القرآن الكريم والسنّة النبوية الشريفة، والتعريف الحضاري
+                            الشامل بالنبي صلى الله عليه وسلم.
+                        </p>
+
+
+
+                    </div>
+
+                    <div class="event-details__accordion">
+                        <div class="accordion" id="FAQAccordion">
+                            <div class="card">
+                                <div class="FAQ__accordion__header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link FAQ__accordion__title" type="button"
+                                            data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
+                                            aria-controls="collapse1">
+                                            <span class="d-flex align-items-center"> <i
+                                                    class="icon icon-alert event-details__accordion__title__icon"></i>
+                                                نص بديل لعنوان السؤال</span>
+                                            <span class="FAQ__accordion__title__button"></span>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapse1" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#FAQAccordion">
+                                    <div class="card-body">
+                                        <h2 class="FAQ__accordion__text">نص بديل لإجابة السؤال نص بديل لإجابة السؤال نص
+                                            بديل لإجابة السؤال نص بديل لإجابة السؤال نص بديل لإجابة السؤال</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="FAQ__accordion__header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link FAQ__accordion__title" type="button"
+                                            data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                            aria-controls="collapse2">
+                                            <span class="d-flex align-items-center"> <i
+                                                    class="icon icon-alert event-details__accordion__title__icon"></i>
+                                                نص بديل لعنوان السؤال</span>
+                                            <span class="FAQ__accordion__title__button"></span>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapse2" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#FAQAccordion">
+                                    <div class="card-body">
+                                        <h2 class="FAQ__accordion__text">نص بديل لإجابة السؤال نص بديل لإجابة السؤال نص
+                                            بديل لإجابة السؤال نص بديل لإجابة السؤال نص بديل لإجابة السؤال</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="FAQ__accordion__header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link FAQ__accordion__title" type="button"
+                                            data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                            aria-controls="collapse3">
+                                            <span class="d-flex align-items-center"> <i
+                                                    class="icon icon-alert event-details__accordion__title__icon"></i>
+                                                نص بديل لعنوان السؤال</span>
+                                            <span class="FAQ__accordion__title__button"></span>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapse3" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#FAQAccordion">
+                                    <div class="card-body">
+                                        <h2 class="FAQ__accordion__text">نص بديل لإجابة السؤال نص بديل لإجابة السؤال نص
+                                            بديل لإجابة السؤال نص بديل لإجابة السؤال نص بديل لإجابة السؤال</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="FAQ__accordion__header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link FAQ__accordion__title" type="button"
+                                            data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                            aria-controls="collapse4">
+                                            <span class="d-flex align-items-center"> <i
+                                                    class="icon icon-alert event-details__accordion__title__icon"></i>
+                                                نص بديل لعنوان السؤال</span>
+                                            <span class="FAQ__accordion__title__button"></span>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapse4" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#FAQAccordion">
+                                    <div class="card-body">
+                                        <h2 class="FAQ__accordion__text">نص بديل لإجابة السؤال نص بديل لإجابة السؤال نص
+                                            بديل لإجابة السؤال نص بديل لإجابة السؤال نص بديل لإجابة السؤال</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="FAQ__accordion__header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link FAQ__accordion__title" type="button"
+                                            data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                            aria-controls="collapse5">
+                                            <span class="d-flex align-items-center"> <i
+                                                    class="icon icon-alert event-details__accordion__title__icon"></i>
+                                                نص بديل لعنوان السؤال</span>
+                                            <span class="FAQ__accordion__title__button"></span>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapse5" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#FAQAccordion">
+                                    <div class="card-body">
+                                        <h2 class="FAQ__accordion__text">نص بديل لإجابة السؤال نص بديل لإجابة السؤال نص
+                                            بديل لإجابة السؤال نص بديل لإجابة السؤال نص بديل لإجابة السؤال</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-details__reserve">
+                        <form action="" class="contact-us__form event-details__reserve__form">
+                            <h2 class="heading-3-bold">حجز تذاكر المعرض</h2>
+                            <div class="form-group">
+                                <label for="name" class="utl-form-label">الأسم بالكامل</label>
+                                <input type="text" id="name" class="form-input form-control"
+                                    placeholder="ادخل الأسم بالكامل">
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="utl-form-label">البريد الإلكتروني</label>
+                                <input type="text" id="name" class="form-input form-control"
+                                    placeholder="ادخل البريد الإلكتروني">
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="utl-form-label">عدد التذاكر</label>
+                                <select name="sort" id="sort" class="form-control form-select">
+                                    <option value="1">--اختر--</option>
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="utl-form-label" id="message">الرسالة</label>
+                                <textarea class="form-input form-control" name="message" id="message" cols="30" rows="5"
+                                    placeholder="اكتب الرسالة"></textarea>
+                            </div>
+                            <div class="text-left">
+                                <button class="btn utl-btn-bg-white w-100">حجز</button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="social-links justify-content-center my-5">
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EVENT DETAILS SECTION START -->
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="footer">
+
+        <div class="container position-relative">
+            <div class="footer__quote">
+                <img class="footer__quote__image" src="../assets/img/footer-quote.png" alt="Logo">
+                <p class="footer__quote__text">التعريف بخاتم الأنبياء وسيد المرسلين، صلوات الله وسلامه عليه، ونشر سيرته
+                    الشريفة وسُنّته الصحيحة، وتقديم رسالته الوسطية الخالدة للعالم صافيةً نقيةً، بأحدث وسائل وتقنيات
+                    العرض الحديثة.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <ul class="footer__list">
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">مَن نحن</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">آخر الأخبار</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">في عيون الصحافة والإعلام </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">في عيون الزائرين</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <ul class="footer__list">
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">معرض الفيديو</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">معرض الصور</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">الأسئلة الشائعة</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">اتصل بنا</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-6">
+                    <h2 class="heading-bold-3">كن على تواصل معنا</h2>
+                    <form action="" class="footer__form">
+                        <input class="footer__form__input" type="text" placeholder="البريد الإلكتروني">
+                        <button class="btn utl-btn-primary footer__form__button">إشتراك</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer__copy-rights">
+                <h2 class="footer__copy-rights__heading"> ©جميع الحقوق محفوظة لموقع المعرض والمتحف الدولى 2021</h2>
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+                <img src="../assets/img/sponsor.png" alt="Sponsor">
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
