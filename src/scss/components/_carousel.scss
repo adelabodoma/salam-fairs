@@ -13,14 +13,14 @@
 // HEADER SWIPER
 .header__swiper {
   &.swiper-container {
-    height: 320px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    // height: 320px;
+    // margin-top: 50px;
+    // margin-bottom: 100px;
     padding-bottom: 0;
     padding-top: 0;
 
     .swiper-pagination {
-      #{$right}: 0;
+      #{$right}: 50px;
       #{$left}: unset;
 
       & > span {
@@ -32,46 +32,79 @@
           background-color: $primary-color;
         }
       }
+
+      @include media-breakpoint-down(sm) {
+        bottom: 100px;
+        top: unset;
+        display: flex;
+        & > span {
+          height: 18px;
+          width: 18px;
+          margin-left: 15px;
+        }
+      }
     }
   }
-}
+  .swiper-slide {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
 
-
-  [class$="__controls"] {
-    position: relative;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    #{$right}: 50%;
-    transform: translate(-50%, -50%);
-    width: 105%;
-    display: flex;
-    align-items: center;
-    z-index: 99;
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: $color-white;
-      box-shadow: $main-box-shadow;
-      cursor: pointer;
-      opacity: 1;
-
+    .swiper-image-container {
+      position: relative;
+      height: 100%;
+      width: 100%;
       &::after {
-        font-size: rem(18);
-        color: $primary-color;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
       }
     }
 
-    // .swiper-button-disabled {
-    //   background-color: $color-white;
-    //   opacity: 1;
+    height: 100% !important;
+  }
+}
 
-    //   &::after {
-    //     color: $primary-color;
-    //   }
-    // }
+[class$="__controls"] {
+  position: relative;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  #{$right}: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $color-white;
+    box-shadow: $main-box-shadow;
+    cursor: pointer;
+    opacity: 1;
+
+    &::after {
+      font-size: rem(18);
+      color: $primary-color;
+    }
   }
 
+  // .swiper-button-disabled {
+  //   background-color: $color-white;
+  //   opacity: 1;
+
+  //   &::after {
+  //     color: $primary-color;
+  //   }
+  // }
+}

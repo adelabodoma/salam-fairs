@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
     slidesPerView: 1,
     direction: "vertical",
     spaceBetween: 30,
+    effect: "fade",
     pagination: {
       el: ".header__swiper .swiper-pagination",
       clickable: true,
@@ -133,6 +134,23 @@ jQuery(document).ready(function ($) {
 });
 
 
+function changeEventContainerPosition(){
+  var element_position = $('#footer').offset().top;
+  var screen_height = $(window).height();
+  var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
+  var activation_point = element_position - (screen_height * activation_offset);
+  var max_scroll_height = $('body').height() - screen_height - 5;//-5 for a little bit of buffer
+  var y_scroll_pos = window.pageYOffset;
+
+  var element_in_view = y_scroll_pos > activation_point;
+  var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
+
+  if(element_in_view || has_reached_bottom_of_page) {
+      //Do something
+      $('.event-details__container').css('bottom', '450px')
+  }
+}
+
 function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "block";
@@ -140,6 +158,13 @@ function scrollFunction(topButton, headerNav) {
   } else {
     topButton.style.display = "none";
     // headerNav.style.top = '60px';
+  }
+
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    $('.event-details__container').css('bottom', '50px');
+    changeEventContainerPosition()
+  }else {
+    $('.event-details__container').css('bottom', '-250px')
   }
 }
 

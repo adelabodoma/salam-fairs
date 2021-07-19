@@ -134,4 +134,14 @@
       }
     }
   }
+
+  &__container {
+    position: fixed;
+    // bottom: 10px;
+    z-index: 99;
+
+    @include media-breakpoint-down(md){
+      position: static;
+    }
+  }
 }

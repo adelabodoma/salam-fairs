@@ -63,7 +63,13 @@
   }
 
   @media screen and(max-height: 768px){
-    top: -200px;
+    top: -150px;
+  }
+
+  @include media-breakpoint-down(sm){
+    top: 0;
+    color: $secondary-color;
+    margin-top: 40px;
   }
 }
 
