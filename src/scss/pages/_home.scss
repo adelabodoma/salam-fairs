@@ -73,6 +73,14 @@
   }
 }
 
+.main {
+  margin-top: -250px;
+
+  @include media-breakpoint-down(sm){
+    margin-top: 0;
+  }
+}
+
 .temp-fairs {
   //   margin-top: 280px;
   //   padding: 80px 0;
@@ -94,6 +102,7 @@
     background-color: #d2ac36;
     opacity: 0.1;
     width: 70%;
+    z-index: -1;
   }
 
   @include media-breakpoint-down(sm) {

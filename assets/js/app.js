@@ -25,6 +25,7 @@ jQuery(document).ready(function ($) {
     const slide = new Swiper(selector, {
       slidesPerView: 3,
       spaceBetween: 30,
+      rtl: true,
       navigation: {
         nextEl: selector + "__controls .swiper-button-next",
         prevEl: selector + "__controls .swiper-button-prev",
@@ -69,7 +70,8 @@ jQuery(document).ready(function ($) {
   // SEARCH FUNCTIONALITY
   $('#openSearchBtn').on('click', () => {
     $('.header__nav__search').toggle();
-    $('body').addClass('backdrop');
+    // $('body').addClass('backdrop');
+    $('.header__nav__search__form__input').focus()
   })
 
 
@@ -129,6 +131,12 @@ jQuery(document).ready(function ($) {
 
   $('#FAQAccordion').on('hidden.bs.collapse', function (event) {
     console.log(event)
+  })
+
+
+  // Form Validation
+  $('#subscribeEmail').keydown(function(){
+    $('#invalidEmail').hide()
   })
 
 });
@@ -195,11 +203,13 @@ function mobileNavMenuRender() {
   const closeMenuBtn = document.getElementById('closeMenu');
 
   openMenuBtn.addEventListener('click', function () {
-    $('.header__mobile').fadeIn('slow')
+    $('.header__mobile').fadeIn('slow');
+    $('body').addClass('utl-opened');
   })
 
   closeMenuBtn.addEventListener('click', function () {
-    $('.header__mobile').fadeOut('slow')
+    $('.header__mobile').fadeOut('slow');
+    $('body').removeClass('utl-opened');
   })
 }
 

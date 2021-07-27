@@ -61,16 +61,30 @@
                     </div>
                     <div class="col-5">
                         <div class="header__top-nav__account dropdown">
-                            <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon" type="button"
-                                id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
-                                تغيير
-                                اللغة</a>
-                            <div class="dropdown-menu" aria-labelledby="changeLang">
-                                <a class="dropdown-item" href="#">عربي</a>
-                                <a class="dropdown-item" href="#">English</a>
+                            <div class="btn-group">
+                                <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon"
+                                    type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> ‏
+                                    تغيير
+                                    اللغة</a>
+                                <div class="dropdown-menu" aria-labelledby="changeLang">
+                                    <a class="dropdown-item" href="#">عربي</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </div>
                             </div>
                             <span class="utl-separator"></span>
-                            <a href="#">إنشاء حساب جديد</a>
+                            <!-- <a href="#">إنشاء حساب جديد</a> -->
+                            <div class="btn-group">
+                                <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon"
+                                    type="button" id="createAccount" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> ‏
+                                    إنشاء حساب جديد
+                                </a>
+                                <div class="dropdown-menu" target="createAccount" aria-labelledby="createAccount">
+                                    <a class="dropdown-item" href="#">إنشاء حساب جديد</a>
+                                    <a class="dropdown-item" href="#">إنشاء حساب </a>
+                                </div>
+                            </div>
                             <span class="utl-separator"></span>
                             <a href="#">بث مباشر</a>
                             <span class="utl-separator"></span>
@@ -82,8 +96,8 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="header__nav__search">
+        <div class="header__nav__search">
+            <div class="container position-relative">
                 <form action="#" class="header__nav__search__form container">
                     <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
                     <button class="header__nav__search__form__submit">
@@ -241,7 +255,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-image-container">
-                            <img src="https://images.unsplash.com/photo-1624243225303-261cc3cd2fbc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max" alt="Lorem Image">
+                            <img src="https://images.unsplash.com/photo-1624243225303-261cc3cd2fbc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+                                alt="Lorem Image">
                         </div>
                         <div class="header__main__content">
                             <div class="container">
@@ -402,12 +417,12 @@
             <h2 class="heading-2 ">المعارض الدائمة</h2>
             <h3>نحن دائمًا في استقبالكم</h3>
             <div class="fairs__cards">
-                <div class="swiper-container fairs__swiper">
+                <div dir="ltr" class="swiper-container fairs__swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-1.png" alt="Card image cap">
+                                <a href="" class="position-relative utl-image-overlay">
+                                    <img class="card-img-top" src="assets/img/backdrop-test.jpg" alt="Card image cap">
                                     <div class="fairs__card__date__container">
                                         <div class="fairs__card__date">
                                             <h4 class="label">من</h4>
@@ -428,7 +443,7 @@
                                         الشريف، على مساحة أربعة آلاف (4000) متر مربع</p>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
+                                            <i class="icon icon-location utl-mr-2"></i>
                                             <span class="heading-3">المدينة المنوره</span>
                                         </h2>
                                         <button class="btn utl-btn-outline-primary"> حجز</button>
@@ -438,8 +453,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-3.png" alt="Card image cap">
+                                <a href="" class="position-relative utl-image-overlay">
+                                    <img class="card-img-top" src="assets/img/backdrop-test.jpg" alt="Card image cap">
                                     <div class="fairs__card__date__container">
                                         <div class="fairs__card__date">
                                             <h4 class="label">من</h4>
@@ -460,7 +475,7 @@
                                         الشريف، على مساحة أربعة آلاف (4000) متر مربع</p>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
+                                            <i class="icon icon-location utl-mr-2"></i>
                                             <span class="heading-3">المدينة المنوره</span>
                                         </h2>
                                         <button class="btn utl-btn-outline-primary"> حجز</button>
@@ -470,8 +485,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-2.png" alt="Card image cap">
+                                <a href="" class="position-relative utl-image-overlay">
+                                    <img class="card-img-top" src="assets/img/backdrop-test.jpg" alt="Card image cap">
                                     <div class="fairs__card__date__container">
                                         <div class="fairs__card__date">
                                             <h4 class="label">من</h4>
@@ -492,7 +507,7 @@
                                         الشريف، على مساحة أربعة آلاف (4000) متر مربع</p>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
+                                            <i class="icon icon-location utl-mr-2"></i>
                                             <span class="heading-3">المدينة المنوره</span>
                                         </h2>
                                         <button class="btn utl-btn-outline-primary"> حجز</button>
@@ -502,8 +517,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-3.png" alt="Card image cap">
+                                <a href="" class="position-relative utl-image-overlay">
+                                    <img class="card-img-top" src="assets/img/backdrop-test.jpg" alt="Card image cap">
                                     <div class="fairs__card__date__container">
                                         <div class="fairs__card__date">
                                             <h4 class="label">من</h4>
@@ -524,7 +539,7 @@
                                         الشريف، على مساحة أربعة آلاف (4000) متر مربع</p>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
+                                            <i class="icon icon-location utl-mr-2"></i>
                                             <span class="heading-3">المدينة المنوره</span>
                                         </h2>
                                         <button class="btn utl-btn-outline-primary"> حجز</button>
@@ -534,8 +549,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-2.png" alt="Card image cap">
+                                <a href="" class="position-relative utl-image-overlay">
+                                    <img class="card-img-top" src="assets/img/backdrop-test.jpg" alt="Card image cap">
                                     <div class="fairs__card__date__container">
                                         <div class="fairs__card__date">
                                             <h4 class="label">من</h4>
@@ -556,7 +571,7 @@
                                         الشريف، على مساحة أربعة آلاف (4000) متر مربع</p>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
+                                            <i class="icon icon-location utl-mr-2"></i>
                                             <span class="heading-3">المدينة المنوره</span>
                                         </h2>
                                         <button class="btn utl-btn-outline-primary"> حجز</button>
@@ -579,634 +594,642 @@
     </section>
     <!-- FAIRS SECTION END -->
 
-    <!-- TEMP FAIRS SECTION START -->
-    <div class="temp-fairs">
-        <div class="container">
-            <h2 class="heading-2 ">المعارض المؤقتة</h2>
-            <h3 class="mb-3">زورونا قبل انتهاء فترة العرض</h3>
-            <div class="temp-fairs__cards">
-                <div class="swiper-container temp-fairs__swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-1.png" alt="Card image cap">
-                                    <div class="fairs__card__date__container">
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">من</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+    <main class="main">
+        <!-- TEMP FAIRS SECTION START -->
+        <div class="temp-fairs">
+            <div class="container">
+                <h2 class="heading-2 ">المعارض المؤقتة</h2>
+                <h3 class="mb-3">زورونا قبل انتهاء فترة العرض</h3>
+                <div class="temp-fairs__cards">
+                    <div dir="ltr" class="swiper-container temp-fairs__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card fairs__card">
+                                    <a href="" class="position-relative utl-image-overlay">
+                                        <img class="card-img-top" src="assets/img/fair-card-1.png" alt="Card image cap">
+                                        <div class="fairs__card__date__container">
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">من</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">الى</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
                                         </div>
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">الى</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
+                                            المقرّ الرئيسي</h5>
+                                        <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
+                                            مساحة أربعة آلاف (4000) متر مربع</p>
+                                        <div class="d-flex align-items-center justify-content-between mt-4">
+                                            <h2 class="d-flex align-items-center">
+                                                <i class="icon icon-location utl-mr-2"></i>
+                                                <span class="heading-3">المدينة المنوره</span>
+                                            </h2>
+                                            <button class="btn utl-btn-outline-primary"> حجز</button>
                                         </div>
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
-                                        المقرّ الرئيسي</h5>
-                                    <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
-                                        مساحة أربعة آلاف (4000) متر مربع</p>
-                                    <div class="d-flex align-items-center justify-content-between mt-4">
-                                        <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
-                                            <span class="heading-3">المدينة المنوره</span>
-                                        </h2>
-                                        <button class="btn utl-btn-outline-primary"> حجز</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-3.png" alt="Card image cap">
-                                    <div class="fairs__card__date__container">
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">من</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                            <div class="swiper-slide">
+                                <div class="card fairs__card">
+                                    <a href="" class="position-relative utl-image-overlay">
+                                        <img class="card-img-top" src="assets/img/fair-card-3.png" alt="Card image cap">
+                                        <div class="fairs__card__date__container">
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">من</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">الى</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
                                         </div>
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">الى</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
+                                            المقرّ الرئيسي</h5>
+                                        <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
+                                            مساحة أربعة آلاف (4000) متر مربع</p>
+                                        <div class="d-flex align-items-center justify-content-between mt-4">
+                                            <h2 class="d-flex align-items-center">
+                                                <i class="icon icon-location utl-mr-2"></i>
+                                                <span class="heading-3">المدينة المنوره</span>
+                                            </h2>
+                                            <button class="btn utl-btn-outline-primary"> حجز</button>
                                         </div>
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
-                                        المقرّ الرئيسي</h5>
-                                    <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
-                                        مساحة أربعة آلاف (4000) متر مربع</p>
-                                    <div class="d-flex align-items-center justify-content-between mt-4">
-                                        <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
-                                            <span class="heading-3">المدينة المنوره</span>
-                                        </h2>
-                                        <button class="btn utl-btn-outline-primary"> حجز</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-2.png" alt="Card image cap">
-                                    <div class="fairs__card__date__container">
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">من</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                            <div class="swiper-slide">
+                                <div class="card fairs__card">
+                                    <a href="" class="position-relative utl-image-overlay">
+                                        <img class="card-img-top" src="assets/img/fair-card-2.png" alt="Card image cap">
+                                        <div class="fairs__card__date__container">
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">من</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">الى</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
                                         </div>
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">الى</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
+                                            المقرّ الرئيسي</h5>
+                                        <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
+                                            مساحة أربعة آلاف (4000) متر مربع</p>
+                                        <div class="d-flex align-items-center justify-content-between mt-4">
+                                            <h2 class="d-flex align-items-center">
+                                                <i class="icon icon-location utl-mr-2"></i>
+                                                <span class="heading-3">المدينة المنوره</span>
+                                            </h2>
+                                            <button class="btn utl-btn-outline-primary"> حجز</button>
                                         </div>
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
-                                        المقرّ الرئيسي</h5>
-                                    <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
-                                        مساحة أربعة آلاف (4000) متر مربع</p>
-                                    <div class="d-flex align-items-center justify-content-between mt-4">
-                                        <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
-                                            <span class="heading-3">المدينة المنوره</span>
-                                        </h2>
-                                        <button class="btn utl-btn-outline-primary"> حجز</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-3.png" alt="Card image cap">
-                                    <div class="fairs__card__date__container">
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">من</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                            <div class="swiper-slide">
+                                <div class="card fairs__card">
+                                    <a href="" class="position-relative utl-image-overlay">
+                                        <img class="card-img-top" src="assets/img/fair-card-3.png" alt="Card image cap">
+                                        <div class="fairs__card__date__container">
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">من</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">الى</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
                                         </div>
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">الى</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
+                                            المقرّ الرئيسي</h5>
+                                        <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
+                                            مساحة أربعة آلاف (4000) متر مربع</p>
+                                        <div class="d-flex align-items-center justify-content-between mt-4">
+                                            <h2 class="d-flex align-items-center">
+                                                <i class="icon icon-location utl-mr-2"></i>
+                                                <span class="heading-3">المدينة المنوره</span>
+                                            </h2>
+                                            <button class="btn utl-btn-outline-primary"> حجز</button>
                                         </div>
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
-                                        المقرّ الرئيسي</h5>
-                                    <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
-                                        مساحة أربعة آلاف (4000) متر مربع</p>
-                                    <div class="d-flex align-items-center justify-content-between mt-4">
-                                        <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
-                                            <span class="heading-3">المدينة المنوره</span>
-                                        </h2>
-                                        <button class="btn utl-btn-outline-primary"> حجز</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card fairs__card">
-                                <a href="" class="position-relative">
-                                    <img class="card-img-top" src="assets/img/fair-card-2.png" alt="Card image cap">
-                                    <div class="fairs__card__date__container">
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">من</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                            <div class="swiper-slide">
+                                <div class="card fairs__card">
+                                    <a href="" class="position-relative utl-image-overlay">
+                                        <img class="card-img-top" src="assets/img/fair-card-2.png" alt="Card image cap">
+                                        <div class="fairs__card__date__container">
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">من</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
+                                            <div class="fairs__card__date">
+                                                <h4 class="label">الى</h4>
+                                                <h2 class="title"> ربيع الآخر</h2>
+                                                <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                            </div>
                                         </div>
-                                        <div class="fairs__card__date">
-                                            <h4 class="label">الى</h4>
-                                            <h2 class="title"> ربيع الآخر</h2>
-                                            <h3 class="date"> 2020/12/10 <i class="icon icon-calender"></i></h3>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
+                                            المقرّ الرئيسي</h5>
+                                        <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
+                                            مساحة أربعة آلاف (4000) متر مربع</p>
+                                        <div class="d-flex align-items-center justify-content-between mt-4">
+                                            <h2 class="d-flex align-items-center">
+                                                <i class="icon icon-location utl-mr-2"></i>
+                                                <span class="heading-3">المدينة المنوره</span>
+                                            </h2>
+                                            <button class="btn utl-btn-outline-primary"> حجز</button>
                                         </div>
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">معرض السيرة النبوية والحضارة الإسلامية -
-                                        المقرّ الرئيسي</h5>
-                                    <p class="card-text heading-3-grey">يقام المعرض في ساحة المسجد النبوي الشريف، على
-                                        مساحة أربعة آلاف (4000) متر مربع</p>
-                                    <div class="d-flex align-items-center justify-content-between mt-4">
-                                        <h2 class="d-flex align-items-center">
-                                            <i class="icon icon-location ml-2"></i>
-                                            <span class="heading-3">المدينة المنوره</span>
-                                        </h2>
-                                        <button class="btn utl-btn-outline-primary"> حجز</button>
                                     </div>
                                 </div>
                             </div>
+    
                         </div>
-
+                    </div>
+                    <div class="temp-fairs__swiper__controls">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <div class="temp-fairs__swiper__controls">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-end mt-5">
-                <button class="btn utl-btn-outline-primary"> عرض الجميع</button>
-            </div>
-        </div>
-    </div>
-    <!-- TEMP FAIRS SECTION END -->
-
-    <!-- LATEST NEWS SECTION START -->
-    <section class="latest-news">
-        <div class="container">
-            <h2 class="heading-2">مقتطفات من أحدث أخبارنا وبشائرنا لكم</h2>
-            <h3 class="mb-2">آخر الأخبار</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card latest-news__card latest-news__card--big">
-                        <img class="card-img-top" src="assets/img/fair-card-1.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title heading-bold-2">معرض "الأنبياء كأنك تراهم" في إكسبو دبي 2020</h5>
-                            <h6>
-                                <i class="icon icon-calender"></i>
-                                <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                            </h6>
-                            <p class="card-text">معرض "الأنبياء عليهم السلام كأنك تراهم" معرضٌ إنسانيٌ حضاريٌ عالمي،
-                                تُشارك به رابطة العالم الإسلامي في اكسبو 2021 دبي </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-lg-6 d-flex mb-3">
-                            <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
-                            <div class="latest-news__card__info">
-                                <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
-                                <h6 class="heading-3-grey">
-                                    <i class="icon icon-calender"></i>
-                                    <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex mb-3">
-                            <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
-                            <div class="latest-news__card__info">
-                                <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
-                                <h6 class="heading-3-grey">
-                                    <i class="icon icon-calender"></i>
-                                    <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex mb-3">
-                            <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
-                            <div class="latest-news__card__info">
-                                <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
-                                <h6 class="heading-3-grey">
-                                    <i class="icon icon-calender"></i>
-                                    <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex mb-3">
-                            <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
-                            <div class="latest-news__card__info">
-                                <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
-                                <h6 class="heading-3-grey">
-                                    <i class="icon icon-calender"></i>
-                                    <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex mb-3">
-                            <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
-                            <div class="latest-news__card__info">
-                                <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
-                                <h6 class="heading-3-grey">
-                                    <i class="icon icon-calender"></i>
-                                    <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex mb-3">
-                            <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
-                            <div class="latest-news__card__info">
-                                <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
-                                <h6 class="heading-3-grey">
-                                    <i class="icon icon-calender"></i>
-                                    <span class="d-inline-block mr-1 my-2">2020/12/10</span>
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-end mt-5">
-                <button class="btn utl-btn-outline-primary"> عرض الجميع</button>
-            </div>
-        </div>
-    </section>
-    <!-- LATEST NEWS SECTION END -->
-
-    <!-- YOUTUBE SECTION START -->
-    <section class="youtube">
-        <div class="container">
-            <h2 class="heading-2 ">مختارات من قناتنا على يوتيوب</h2>
-            <h3 class="mb-3">شاهِد معنا</h3>
-            <div class="youtube__cards">
-                <div class="swiper-container youtube__swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card youtube__card">
-                                <a href="../assets/img/video.mp4" data-fancybox="media-videos"
-                                    class="youtube__card__link">
-                                    <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
-                                    <i class="icon icon-play youtube__card__play-icon"></i>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
-                                        الدولي للسيرة النبوية والحضارة الإسلامية</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card youtube__card">
-                                <a href="../assets/img/video.mp4" data-fancybox="media-videos"
-                                    class="youtube__card__link">
-                                    <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
-                                    <i class="icon icon-play youtube__card__play-icon"></i>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
-                                        الدولي للسيرة النبوية والحضارة الإسلامية</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card youtube__card">
-                                <a href="../assets/img/video.mp4" data-fancybox="media-videos"
-                                    class="youtube__card__link">
-                                    <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
-                                    <i class="icon icon-play youtube__card__play-icon"></i>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
-                                        الدولي للسيرة النبوية والحضارة الإسلامية</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card youtube__card">
-                                <a href="../assets/img/video.mp4" data-fancybox="media-videos"
-                                    class="youtube__card__link">
-                                    <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
-                                    <i class="icon icon-play youtube__card__play-icon"></i>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
-                                        الدولي للسيرة النبوية والحضارة الإسلامية</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card youtube__card">
-                                <a href="../assets/img/video.mp4" data-fancybox="media-videos"
-                                    class="youtube__card__link">
-                                    <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
-                                    <i class="icon icon-play youtube__card__play-icon"></i>
-                                </a>
-                                <div class="card-body">
-                                    <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
-                                        الدولي للسيرة النبوية والحضارة الإسلامية</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="youtube__swiper__controls">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-end mt-5">
-                <button class="btn utl-btn-outline-white"> عرض الجميع</button>
-            </div>
-        </div>
-    </section>
-    <!-- YOUTUBE SECTION END -->
-
-    <!-- PARTNER SECTION START -->
-    <section class="partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="heading-2">الشركاء</h2>
-                    <div class="partners__cards">
-                        <div class="swiper-container partners__swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="partners__swiper__controls">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                    <div class="partners__cards">
-                        <div class="swiper-container partners-2__swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="partners-2__swiper__controls">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="heading-2">الرعاة</h2>
-                    <div class="partners__cards">
-                        <div class="swiper-container sponsor__swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sponsor__swiper__controls">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                    <div class="partners__cards">
-                        <div class="swiper-container sponsor-2__swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card partners__card">
-                                        <img class="partners__card__image" src="assets/img/partner-1.png"
-                                            alt="Partner Name">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sponsor-2__swiper__controls">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-end mt-5">
+                    <button class="btn utl-btn-outline-primary"> عرض الجميع</button>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- PARTNER SECTION END -->
-
-    <!-- MOBILE SECTION START -->
-    <section class="mobile-app">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-5">
-                    <div class="mobile-app__content">
-                        <h5>تطبيق المعرض</h5>
-                        <h2 class="heading-2">المعرض والمتحف الدولي للسيرة النبوية والحضارة الإسلامية</h2>
-                        <p class="heading-3">
-                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
-                            بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
-                            انترنت
-                        </p>
-                        <div class="mobile-app__store">
-                            <a href="#" class="mobile-app__link">
-                                <img class="mobile-app__download" src="assets/img/google-play.png" alt="Google Store">
+        <!-- TEMP FAIRS SECTION END -->
+    
+        <!-- LATEST NEWS SECTION START -->
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="heading-2">مقتطفات من أحدث أخبارنا وبشائرنا لكم</h2>
+                <h3 class="mb-2">آخر الأخبار</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card latest-news__card latest-news__card--big">
+                            <img class="card-img-top" src="assets/img/fair-card-1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">معرض "الأنبياء كأنك تراهم" في إكسبو دبي 2020</h5>
+                                <h6>
+                                    <i class="icon icon-calender"></i>
+                                    <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                </h6>
+                                <p class="card-text">معرض "الأنبياء عليهم السلام كأنك تراهم" معرضٌ إنسانيٌ حضاريٌ عالمي،
+                                    تُشارك به رابطة العالم الإسلامي في اكسبو 2021 دبي </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex mb-3">
+                                <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
+                                <div class="latest-news__card__info">
+                                    <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
+                                    <h6 class="heading-3-grey">
+                                        <i class="icon icon-calender"></i>
+                                        <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex mb-3">
+                                <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
+                                <div class="latest-news__card__info">
+                                    <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
+                                    <h6 class="heading-3-grey">
+                                        <i class="icon icon-calender"></i>
+                                        <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex mb-3">
+                                <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
+                                <div class="latest-news__card__info">
+                                    <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
+                                    <h6 class="heading-3-grey">
+                                        <i class="icon icon-calender"></i>
+                                        <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex mb-3">
+                                <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
+                                <div class="latest-news__card__info">
+                                    <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
+                                    <h6 class="heading-3-grey">
+                                        <i class="icon icon-calender"></i>
+                                        <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex mb-3">
+                                <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
+                                <div class="latest-news__card__info">
+                                    <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
+                                    <h6 class="heading-3-grey">
+                                        <i class="icon icon-calender"></i>
+                                        <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex mb-3">
+                                <img class="latest-news__card__image" src="assets/img/news-card-1.png" alt="News">
+                                <div class="latest-news__card__info">
+                                    <h2 class="heading-bold-2">لجنة علمية تقنية للتدقيق النهائي قبل التدشين</h2>
+                                    <h6 class="heading-3-grey">
+                                        <i class="icon icon-calender"></i>
+                                        <span class="d-inline-block utl-ml-2 my-2">2020/12/10</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-5">
+                    <button class="btn utl-btn-outline-primary"> عرض الجميع</button>
+                </div>
+            </div>
+        </section>
+        <!-- LATEST NEWS SECTION END -->
+    
+        <!-- YOUTUBE SECTION START -->
+        <section class="youtube">
+            <div class="container">
+                <h2 class="heading-2 ">مختارات من قناتنا على يوتيوب</h2>
+                <h3 class="mb-3">شاهِد معنا</h3>
+                <div class="youtube__cards">
+                    <div dir="ltr" class="swiper-container youtube__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card youtube__card">
+                                    <a href="../assets/img/video.mp4" data-fancybox="media-videos"
+                                        class="youtube__card__link">
+                                        <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
+                                        <i class="icon icon-play youtube__card__play-icon"></i>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
+                                            الدولي للسيرة النبوية والحضارة الإسلامية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card youtube__card">
+                                    <a href="../assets/img/video.mp4" data-fancybox="media-videos"
+                                        class="youtube__card__link">
+                                        <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
+                                        <i class="icon icon-play youtube__card__play-icon"></i>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
+                                            الدولي للسيرة النبوية والحضارة الإسلامية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card youtube__card">
+                                    <a href="../assets/img/video.mp4" data-fancybox="media-videos"
+                                        class="youtube__card__link">
+                                        <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
+                                        <i class="icon icon-play youtube__card__play-icon"></i>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
+                                            الدولي للسيرة النبوية والحضارة الإسلامية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card youtube__card">
+                                    <a href="../assets/img/video.mp4" data-fancybox="media-videos"
+                                        class="youtube__card__link">
+                                        <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
+                                        <i class="icon icon-play youtube__card__play-icon"></i>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
+                                            الدولي للسيرة النبوية والحضارة الإسلامية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card youtube__card">
+                                    <a href="../assets/img/video.mp4" data-fancybox="media-videos"
+                                        class="youtube__card__link">
+                                        <img class="card-img-top" src="assets/img/youtube-1.png" alt="Card image cap">
+                                        <i class="icon icon-play youtube__card__play-icon"></i>
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title heading-bold-2">أمير المدينة المنورة يدشّن المعرض والمتحف
+                                            الدولي للسيرة النبوية والحضارة الإسلامية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="youtube__swiper__controls">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-5">
+                    <button class="btn utl-btn-outline-white"> عرض الجميع</button>
+                </div>
+            </div>
+        </section>
+        <!-- YOUTUBE SECTION END -->
+    
+        <!-- PARTNER SECTION START -->
+        <section class="partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="heading-2">الشركاء</h2>
+                        <div class="partners__cards">
+                            <div dir="ltr"  class="swiper-container partners__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners__swiper__controls">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                        <div class="partners__cards">
+                            <div dir="ltr" class="swiper-container partners-2__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-2__swiper__controls">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="heading-2">الرعاة</h2>
+                        <div class="partners__cards">
+                            <div dir="ltr"  class="swiper-container sponsor__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sponsor__swiper__controls">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                        <div class="partners__cards">
+                            <div dir="ltr" class="swiper-container sponsor-2__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card partners__card">
+                                            <img class="partners__card__image" src="assets/img/partner-1.png"
+                                                alt="Partner Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sponsor-2__swiper__controls">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PARTNER SECTION END -->
+    
+        <!-- MOBILE SECTION START -->
+        <section class="mobile-app">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5">
+                        <div class="mobile-app__content">
+                            <h5>تطبيق المعرض</h5>
+                            <h2 class="heading-2">المعرض والمتحف الدولي للسيرة النبوية والحضارة الإسلامية</h2>
+                            <p class="heading-3">
+                                لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص
+                                بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع
+                                انترنت
+                            </p>
+                            <div class="mobile-app__store">
+                                <a href="#" class="mobile-app__link">
+                                    <img class="mobile-app__download" src="assets/img/google-play.png" alt="Google Store">
+                                </a>
+                                <a href="#" class="mobile-app__link">
+                                    <img class="mobile-app__download" src="assets/img/apple-store.png" alt="Google Store">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 text-left">
+                        <img class="mobile-app__main-image" src="assets/img/mobile.png" alt="Mobile">
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!-- MOBILE SECTION END -->
+    
+        <!-- FOOTER SECTION START -->
+        <footer class="footer">
+    
+            <div class="container position-relative">
+                <div class="footer__quote">
+                    <img class="footer__quote__image" src="assets/img/footer-quote.png" alt="Logo">
+                    <p class="footer__quote__text">التعريف بخاتم الأنبياء وسيد المرسلين، صلوات الله وسلامه عليه، ونشر سيرته
+                        الشريفة وسُنّته الصحيحة، وتقديم رسالته الوسطية الخالدة للعالم صافيةً نقيةً، بأحدث وسائل وتقنيات
+                        العرض الحديثة.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <ul class="footer__list">
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">مَن نحن</a>
+                            </li>
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">آخر الأخبار</a>
+                            </li>
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">في عيون الصحافة والإعلام </a>
+                            </li>
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">في عيون الزائرين</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <ul class="footer__list">
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">معرض الفيديو</a>
+                            </li>
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">معرض الصور</a>
+                            </li>
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">الأسئلة الشائعة</a>
+                            </li>
+                            <li class="footer__list__item">
+                                <a href="" class="footer__list__item__link heading-3">اتصل بنا</a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-6">
+                        <h2 class="heading-bold-3">كن على تواصل معنا</h2>
+                        <form action="" class="footer__form">
+    
+                            <div class="mb-3 alert alert-danger" id="invalidEmail">
+                                <h3> حقل البريد الالكتروني مطلوب. </h3>
+                            </div>
+                            <div class="form-group position-relative">
+                                <input class="footer__form__input" id="subscribeEmail" type="text" placeholder="البريد الإلكتروني">
+                                <button class="btn utl-btn-primary footer__form__button">إشتراك</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+    
+                <div class="footer__copy-rights">
+                    <h2 class="footer__copy-rights__heading"> ©جميع الحقوق محفوظة لموقع المعرض والمتحف الدولى 2021</h2>
+                    <ul class="social-links">
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-youtube"></i>
                             </a>
-                            <a href="#" class="mobile-app__link">
-                                <img class="mobile-app__download" src="assets/img/apple-store.png" alt="Google Store">
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-instagram"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7 text-left">
-                    <img class="mobile-app__main-image" src="assets/img/mobile.png" alt="Mobile">
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- MOBILE SECTION END -->
-
-    <!-- FOOTER SECTION START -->
-    <footer class="footer">
-
-        <div class="container position-relative">
-            <div class="footer__quote">
-                <img class="footer__quote__image" src="assets/img/footer-quote.png" alt="Logo">
-                <p class="footer__quote__text">التعريف بخاتم الأنبياء وسيد المرسلين، صلوات الله وسلامه عليه، ونشر سيرته
-                    الشريفة وسُنّته الصحيحة، وتقديم رسالته الوسطية الخالدة للعالم صافيةً نقيةً، بأحدث وسائل وتقنيات
-                    العرض الحديثة.</p>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <ul class="footer__list">
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">مَن نحن</a>
                         </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">آخر الأخبار</a>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-twitter"></i>
+                            </a>
                         </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">في عيون الصحافة والإعلام </a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">في عيون الزائرين</a>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-facebook"></i>
+                            </a>
                         </li>
                     </ul>
+                    <img src="assets/img/sponsor.png" alt="Sponsor">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <ul class="footer__list">
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">معرض الفيديو</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">معرض الصور</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">الأسئلة الشائعة</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">اتصل بنا</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-lg-6">
-                    <h2 class="heading-bold-3">كن على تواصل معنا</h2>
-                    <form action="" class="footer__form">
-                        <input class="footer__form__input" type="text" placeholder="البريد الإلكتروني">
-                        <button class="btn utl-btn-primary footer__form__button">إشتراك</button>
-                    </form>
-                </div>
-
             </div>
-
-            <div class="footer__copy-rights">
-                <h2 class="footer__copy-rights__heading"> ©جميع الحقوق محفوظة لموقع المعرض والمتحف الدولى 2021</h2>
-                <ul class="social-links">
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-                <img src="assets/img/sponsor.png" alt="Sponsor">
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER SECTION END -->
+        </footer>
+        <!-- FOOTER SECTION END -->
+    </main>
 
 
 

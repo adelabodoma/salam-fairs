@@ -165,18 +165,17 @@
     align-items: center;
     justify-content: space-between;
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       flex-direction: column;
-      
+
       @at-root .heading-2 {
-        margin-bottom: 15px!important;
+        margin-bottom: 15px !important;
       }
 
       .form-input-search {
-        margin-#{$right}: 0!important;
+        margin-#{$right}: 0 !important;
         margin-bottom: 30px;
       }
-
     }
   }
 }
@@ -192,14 +191,53 @@
 }
 
 .utl-section-header {
-    &__content {
-      background-color: $color-white;
-      padding: 40px;
-      border-radius: 6px;
-      box-shadow: $main-box-shadow;
-      position: relative;
-      top: -100px;
-      width: 100%;
-      text-align: center;
-    }
+  &__content {
+    background-color: $color-white;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: $main-box-shadow;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.utl-image-overlay {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 2;
+    border-radius: 6px;
+    height: 98%;
+  }
+
+  & > div {
+    //   position: relative;
+    z-index: 99;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+// Overwrite Bootstrap UTL
+.utl-mr-2 {
+  margin-inline-end: 7px!important;
+}
+
+.utl-ml-2 {
+  margin-inline-start: 7px!important;
+}
+
+.utl-opened {
+  height: 100vh;
+  overflow-y: hidden;
 }

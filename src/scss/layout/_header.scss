@@ -29,6 +29,7 @@
     &__account {
       margin-#{$right}: auto;
       margin-#{$left}: 25px;
+      text-align: end;
 
       &__change-lang {
         .icon {
