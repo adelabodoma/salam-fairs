@@ -102,6 +102,8 @@
     }
 
     &__content {
+      line-height: 24px;
+
       &__header {
         display: flex;
         align-items: center;
@@ -130,6 +132,10 @@
 
       .share-icon {
         font-size: rem(30);
+      }
+
+      p {
+        line-height: 24px;
       }
     }
 

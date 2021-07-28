@@ -8,10 +8,12 @@
 .swiper-slide {
   text-align: #{$left};
   font-size: 18px;
-  min-height: 100%;
+  min-height: 100%!important;
+  height: auto!important;
 
   & > div {
-    height: 100%;
+    min-height: 100%!important;
+    height: auto!important;
   }
 }
 
