@@ -174,7 +174,11 @@
 
         @include media-breakpoint-down(sm) {
           width: 100%;
-          margin-top: 20px;
+          margin: 10px;
+
+          &__submit {
+            #{$right}: 10px;
+          }
         }
       }
     }

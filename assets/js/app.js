@@ -92,7 +92,7 @@ jQuery(document).ready(function ($) {
     topFunction();
     event.preventDefault();
     $('.header__nav__search').show().css('bottom', '-85px')
-    $('body').addClass('backdrop');
+    // $('body').addClass('backdrop');
   })
 
   // $('#closeSearchBtn').on('click', () => {

@@ -241,3 +241,9 @@
   height: 100vh;
   overflow-y: hidden;
 }
+
+.utl-mobile-hide {
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
+}
