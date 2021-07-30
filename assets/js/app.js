@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     direction: "vertical",
     spaceBetween: 30,
     effect: "fade",
+    allowTouchMove:  window.innerWidth < 768 ? false : true,
     pagination: {
       el: ".header__swiper .swiper-pagination",
       clickable: window.innerWidth < 768 ? false : true,
