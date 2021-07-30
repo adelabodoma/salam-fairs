@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
     effect: "fade",
     pagination: {
       el: ".header__swiper .swiper-pagination",
-      clickable: true,
+      clickable: window.innerWidth < 768 ? false : true,
     }
   });
 
