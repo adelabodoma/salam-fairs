@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
     allowTouchMove:  window.innerWidth < 768 ? false : true,
     pagination: {
       el: ".header__swiper .swiper-pagination",
-      clickable: window.innerWidth < 768 ? false : true,
+      clickable:  true,
     }
   });
 
@@ -144,7 +144,7 @@ jQuery(document).ready(function ($) {
 
 
 function changeEventContainerPosition(){
-  var element_position = $('#footer').offset().top;
+  var element_position = $('#footer').offset() && $('#footer').offset().top;
   var screen_height = $(window).height();
   var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
   var activation_point = element_position - (screen_height * activation_offset);

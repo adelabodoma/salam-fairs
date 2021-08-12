@@ -110,8 +110,11 @@
   }
 
   @include media-breakpoint-down(sm) {
+    padding-bottom: 10px;
     &::after {
-      display: none;
+      // display: none;
+      width: 100%;
+      clip-path: none
     }
   }
 }
@@ -210,8 +213,11 @@
   }
 
   @include media-breakpoint-down(sm) {
+    padding-bottom: 10px;
     &::after {
-      display: none;
+      // display: none;
+      width: 100%;
+      clip-path: none
     }
   }
 }

@@ -247,3 +247,19 @@
     display: none;
   }
 }
+
+// .d-flex justify-content-end mt-5
+// d-flex justify-content-end mt-5
+// d-flex justify-content-end mt-5
+// d-flex justify-content-end mt-5
+
+.utl-show-more-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @include media-breakpoint-down(sm){
+    margin-top: 0;
+  }
+}

@@ -35,15 +35,18 @@
         height: 13px;
         border-radius: 50%;
         background-color: $color-light-grey;
+        cursor: pointer;
         &.swiper-pagination-bullet-active {
           background-color: $primary-color;
         }
       }
 
       @include media-breakpoint-down(sm) {
-        bottom: 100px;
+        bottom: 150px;
         top: unset;
         display: flex;
+        left: 50%;
+        transform: translateX(-50%);
         & > span {
           height: 18px;
           width: 18px;
