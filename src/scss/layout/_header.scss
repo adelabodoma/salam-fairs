@@ -155,7 +155,7 @@
           border: 0;
           color: #fff;
           top: -30px;
-          right: 100px;
+          #{$left}: 100px;
           width: 30px;
           height: 30px;
         }
@@ -254,7 +254,7 @@
     &__search-button {
       font-size: rem(18);
       color: $primary-color;
-      margin-left: 15px;
+      margin-#{$right}: 15px;
     }
   }
 

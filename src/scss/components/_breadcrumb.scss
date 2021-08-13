@@ -21,7 +21,12 @@
         position: relative;
 
         &::after {
-          @include addIcon($icon-left-arrow, 10px);
+          @if $direction == rtl {
+            @include addIcon($icon-left-arrow, 10px);
+          } @else {
+            @include addIcon($icon-right-arrow, 10px);
+          }
+          
           #{$right}: -18px;
           top: 5px;
           color: #000;

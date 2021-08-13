@@ -133,7 +133,7 @@
 .icon-twitter1 .path2 {
   &:before {
     content: $icon-twitter1-path2;  
-    margin-left: -1em;  
+    margin-#{$right}: -1em;  
     color: rgb(241, 242, 242);
   }
 }
@@ -152,7 +152,7 @@
 .icon-facebook1 .path2 {
   &:before {
     content: $icon-facebook1-path2;  
-    margin-left: -1em;  
+    margin-#{$right}: -1em;  
     color: rgb(255, 255, 255);
   }
 }
@@ -171,7 +171,7 @@
 .icon-instagram1 .path2 {
   &:before {
     content: $icon-instagram1-path2;  
-    margin-left: -1em;  
+    margin-#{$right}: -1em;  
     color: rgb(255, 255, 255);
   }
 }
@@ -184,7 +184,7 @@
 .icon-linkedin .path2 {
   &:before {
     content: $icon-linkedin-path2;  
-    margin-left: -1em;  
+    margin-#{$right}: -1em;  
     color: rgb(241, 242, 242);
   }
 }

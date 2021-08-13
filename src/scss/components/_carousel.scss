@@ -50,7 +50,7 @@
         & > span {
           height: 18px;
           width: 18px;
-          margin-left: 15px;
+          margin-#{$right}: 15px;
         }
       }
     }
@@ -91,7 +91,7 @@
   // height: 50px;
   position: absolute;
   top: 50%;
-  #{$right}: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 105%;
   display: flex;

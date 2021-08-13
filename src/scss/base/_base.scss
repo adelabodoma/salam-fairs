@@ -42,10 +42,10 @@ body {
     content: "";
     width: 40%;
     height: 500px;
-    margin-right: auto;
+    margin-#{$left}: auto;
     position: absolute;
     bottom: 11%;
-    left: 0;
+    #{$right}: 0;
     z-index: -1;
     opacity: .5;
   }

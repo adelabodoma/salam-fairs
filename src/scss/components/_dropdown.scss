@@ -2,6 +2,10 @@
     li {
       padding: 10px;
     }
+
+    @if $direction == ltr{
+      left: unset;
+    }
   }
   .dropdown-submenu {
     position: relative;
@@ -10,7 +14,7 @@
   .dropdown-submenu > .dropdown-menu {
     top: -2px;
     margin-top: -6px;
-    margin-left: -1px;
+    margin-#{$right}: -1px;
     #{$right}: -100%;
     border-radius: 0 0 6px 6px;
     background-color: $primary-color;
@@ -36,9 +40,14 @@
     -moz-osx-font-smoothing: grayscale;
     content: $icon-left-arrow;
     position: absolute;
-    left: 10px;
+    #{$right}: 10px;
     top: 20px;
     font-size: 14px;
+
+    @if $direction == ltr{
+      transform: rotate(180deg);
+      left: unset;
+    }
   }
   
   .dropdown-submenu:hover > a:after {
@@ -50,8 +59,8 @@
   }
   
   .dropdown-submenu.pull-left > .dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
+    #{$right}: -100%;
+    margin-#{$right}: 10px;
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;

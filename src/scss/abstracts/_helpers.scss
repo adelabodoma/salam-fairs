@@ -263,3 +263,9 @@
     margin-top: 0;
   }
 }
+
+.text-left {
+  @if $direction == ltr {
+    text-align: right!important;
+  }
+}
